@@ -1,9 +1,14 @@
 import sys
-sys.path.append('..')
+from pathlib import Path
+
+# Add project root to path (3 levels up: scripts -> geoserver-cloud -> geoserver -> root)
+project_root = Path(__file__).parent.parent.parent.parent
+sys.path.insert(0, str(project_root))
 
 from evaluate_architecture import evaluate_architecture, save_evaluation_result
 
-diagram_path_png = "../geoserver/geoserver-cloud/gs_cloud_architecture_diagram.png"
+# Diagram is in the same directory as the script's parent
+diagram_path_png = str(Path(__file__).parent.parent / "gs_cloud_architecture_diagram.png")
 
 description = """
 GeoServer Cloud
@@ -29,7 +34,7 @@ result = evaluate_architecture(
     description=description
 )
 
-file_path = save_evaluation_result(result, "accuracy", output_dir="../evaluations")
+file_path = save_evaluation_result(result, "accuracy", output_dir=str(project_root / "evaluations"))
 print(f"\n✓ Evaluation saved to {file_path}.txt/.json")
 print(f"Tokens used: {result['usage']['total_tokens']:,}")
 print(f"Cost estimate: ${(result['usage']['prompt_tokens']/1_000_000*1.25 + result['usage']['completion_tokens']/1_000_000*10):.4f}")
