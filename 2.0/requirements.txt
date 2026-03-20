@@ -1,0 +1,14 @@
+# LLM Architecture Evaluation Dependencies
+
+# OpenAI API client for ChatGPT integration
+openai>=1.0.0
+
+# Google Generative AI client for Gemini integration
+# NOTE: google-generativeai is deprecated. The new package is google-genai
+# The old package still works but consider migrating to google-genai in the future
+google-generativeai>=0.3.0
+# Alternative (new package): google-genai>=1.0.0
+
+# Environment variable management
+python-dotenv>=1.0.0
+

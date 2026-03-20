@@ -1,0 +1,71 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="meth" name="Methodology">
+    <mxGraphModel dx="1024" dy="768" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- Step 1 -->
+        <mxCell id="2" value="1. Dataset&#xa;Microservice-based&#xa;OSS projects" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="420" y="40" width="260" height="70" as="geometry"/>
+        </mxCell>
+
+        <!-- Step 2 -->
+        <mxCell id="4" value="2. Filter by scope&#xa;Software systems /&#xa;parts of systems" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="420" y="150" width="260" height="70" as="geometry"/>
+        </mxCell>
+
+        <!-- Step 3 -->
+        <mxCell id="6" value="3. Select repos with&#xa;consistent architecture&#xa;diagrams" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="420" y="260" width="260" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- Step 4 -->
+        <mxCell id="8" value="4. Keep repos with&#xa;textual diagrams&#xa;(SVG / XML)" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="420" y="380" width="260" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- Step 5 -->
+        <mxCell id="10" value="5. Remaining: 3 repos&#xa;Preliminary study on&#xa;geoserver/geocloud" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="420" y="500" width="260" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- Step 6 -->
+        <mxCell id="12" value="6. Prompt design&#xa;Criteria from LLM paper +&#xa;Guidelines from survey" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="420" y="620" width="260" height="90" as="geometry"/>
+        </mxCell>
+
+        <!-- Step 7 -->
+        <mxCell id="14" value="7. Model selection&#xa;GPT-5 and Gemini 3 Pro" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="420" y="750" width="260" height="70" as="geometry"/>
+        </mxCell>
+
+        <!-- Arrows -->
+        <mxCell id="3" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;strokeColor=#000000;" edge="1" parent="1" source="2" target="4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="5" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;strokeColor=#000000;" edge="1" parent="1" source="4" target="6">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="7" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;strokeColor=#000000;" edge="1" parent="1" source="6" target="8">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="9" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;strokeColor=#000000;" edge="1" parent="1" source="8" target="10">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="11" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;strokeColor=#000000;" edge="1" parent="1" source="10" target="12">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="13" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;html=1;strokeColor=#000000;" edge="1" parent="1" source="12" target="14">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

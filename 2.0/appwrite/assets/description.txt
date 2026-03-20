@@ -1,0 +1,11 @@
+Appwrite's current structure is a combination of both Monolithic and Microservice architectures.
+
+The Monolithic Part
+Appwrite's main API container is designed as a monolithic app. This is a decision we made to allow us to develop the project faster while still being a very small team.
+
+Although the Appwrite API is a monolithic app, it has a very clear separation of concern as each internal service or worker is separated by its container, which allows us to start breaking services for better maintenance and scalability as we grow.
+
+The Microservice Part
+Each container in Appwrite is a microservice on its own. Each service is an independent process that can scale without regard to any of the other services.
+
+Currently, all the Appwrite microservices are intended to communicate using the TCP protocol over a private network. With the exception of the public-facing port 80 and 443, which by default are used to expose the Appwrite HTTP API, you should avoid exposing any other services' ports.

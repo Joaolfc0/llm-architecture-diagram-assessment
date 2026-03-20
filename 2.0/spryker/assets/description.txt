@@ -1,0 +1,23 @@
+
+Claranet GmbH provides the whole demoshop stack as local development environment implemented employing container technologies. All the rounded rectangles representing containers. The orange ones are all instances of the claranet/spryker-demoshop:latest image.
+Several services are being exposed by the docker-compose stack. In order to run stacks in parallel and prevent port collisions we need to align port allocation.
+
+Therefore the following scheme has been implemented: The port number is encoded like this: ECCDD
+
+E - Environment
+1 - production
+2 - development
+CC - Component
+01 - yves
+02 - zed
+03 - jenkins
+05 - elasticsearch
+06 - postgresql
+07 - rabbitmq
+DD - Domain
+00 - DE
+01 - AT
+02 - US
+So yves DE is reachable via http://localhost:20100/ and yves US via http://localhost:20102
+
+Notice: The differentiation between stores/domains by port is only applicable to the local devel environment. The actual production grade stack provided by Claranet is doing this distinction based on the actual domain name.

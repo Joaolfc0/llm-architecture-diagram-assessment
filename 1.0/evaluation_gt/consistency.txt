@@ -1,0 +1,12 @@
+- **Rating**: Acceptable Consistency
+- **Justification**:
+All different type of elements have clear and consistent notations.
+Yes, The external data sources, as well as components like gateway, monitoring and logging are all consistent and have explicit symbols.
+In the diagram description we have a naming inconsistency in the quote:
+"Lines connecting a group to another component indicate that the connector applies to all services of the outgoing end and to all components of the incoming end."
+It is understood that a line connects a group to a component, and after that it says "all components of the incoming end", so the word component is used as logical group and component, which is confusing and inconsistent, but not enough to make it impactful."
+- Guideline Checks:
+- Notation Definition and Uniformity: YES
+- Technology Symbols: YES
+- Naming and Representation Consistency: YES
+

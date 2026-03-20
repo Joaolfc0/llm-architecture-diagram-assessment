@@ -1,0 +1,13 @@
+﻿   cd appwrite/scripts
+   
+   # Run all 4 modes (Gemini PNG, Gemini SVG, ChatGPT PNG, ChatGPT SVG)
+   python run_evaluation.py
+   
+   # Run only ChatGPT with PNG
+   python run_evaluation.py --model chatgpt --input png
+   
+   # Run only Gemini with both inputs
+   python run_evaluation.py --model gemini
+   
+   # Run with custom delay between API calls
+   python run_evaluation.py --delay 30
