@@ -1,9 +1,0 @@
-- **Rating**: Acceptable Clarity
-- **Justification**:
-Labels given to some services in the GeoServer logical grouping, such as WFS, WPS, GWC, WCS, are not clear or understandable for me as a technical reader, and probably even less to a semi-technical reader. The rest is labeled with meaningful names.
-The reading flow is good and understandable. We can understand the "Front services" logical group as the entry point and how the requests flow with an appropriate clarity.
-All symbols, labels and connections are visually clear and readable.
-- Guideline Checks:
-- Element Identification: NO
-- Reading Flow: YES
-- Symbol and Label Readability: YES
