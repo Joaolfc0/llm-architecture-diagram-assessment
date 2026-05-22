@@ -1,0 +1,13 @@
+   cd sentry/scripts
+   
+   # Run all 4 modes (Claude PNG, Claude XML, ChatGPT PNG, ChatGPT XML)
+   python run_evaluation.py
+   
+   # Run only ChatGPT with PNG
+   python run_evaluation.py --model chatgpt --input png
+   
+   # Run only Claude with both inputs
+   python run_evaluation.py --model claude
+   
+   # Run with custom delay between API calls
+   python run_evaluation.py --delay 30

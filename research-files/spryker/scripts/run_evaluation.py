@@ -2,7 +2,7 @@
 Spryker Architecture Evaluation Script
 
 This script runs architecture diagram evaluations for the Spryker project
-using both ChatGPT and Gemini models with PNG and XML inputs.
+using both ChatGPT and Claude models with PNG and XML inputs.
 """
 
 import sys
@@ -16,7 +16,7 @@ project_root = Path(__file__).resolve().parent.parent.parent
 sys.path.insert(0, str(project_root))
 
 from chatgpt_integration import client as chatgpt
-from gemini_integration import client as gemini
+from claude_integration import client as claude
 
 # Asset paths relative to this script
 ASSETS_DIR = Path(__file__).resolve().parent.parent / "assets"
@@ -45,7 +45,7 @@ def run_evaluation(
     Run evaluation for a specific model and input type.
     
     Args:
-        model: 'chatgpt' or 'gemini'
+        model: 'chatgpt' or 'claude'
         input_type: 'png' or 'xml'
         criteria: List of evaluation criteria to run
         delay: Seconds to wait between API calls
@@ -58,7 +58,7 @@ def run_evaluation(
     if model == "chatgpt":
         client = chatgpt
     else:
-        client = gemini
+        client = claude
     
     # Select the appropriate diagram path and function
     if input_type == "png":
@@ -152,8 +152,8 @@ Examples:
   # Run only PNG-based evaluations
   python run_evaluation.py --input png
   
-  # Run Gemini with XML input only
-  python run_evaluation.py --model gemini --input xml
+  # Run Claude with XML input only
+  python run_evaluation.py --model claude --input xml
   
   # Run with custom delay between API calls
   python run_evaluation.py --delay 60
@@ -165,7 +165,7 @@ Examples:
     
     parser.add_argument(
         "--model",
-        choices=["chatgpt", "gemini", "both"],
+        choices=["chatgpt", "claude", "both"],
         default="both",
         help="Which model to use (default: both)"
     )
@@ -195,7 +195,7 @@ Examples:
     args = parser.parse_args()
     
     # Determine which models and input types to run
-    models = ["chatgpt", "gemini"] if args.model == "both" else [args.model]
+    models = ["chatgpt", "claude"] if args.model == "both" else [args.model]
     input_types = ["png", "xml"] if args.input == "both" else [args.input]
     
     # Validate assets exist

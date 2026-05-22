@@ -24,10 +24,20 @@ In particular, evaluate:
 
 ### Output Format (IMPORTANT)
 
-Answer **only** using the structure below, in English:
+Return **only valid JSON** (no markdown, no prose, no code fences), in English:
 
-- **Guideline Checks**:
-  - Component Matching: [4 (Excellent) | 3 (Good) | 2 (Fair) | 1 (Poor)]
-  - **Justification**:
-  - Interaction Matching: [4 (Excellent) | 3 (Good) | 2 (Fair) | 1 (Poor)]
-  - **Justification**:
+{
+  "criterion": "accuracy",
+  "guidelines": [
+    {
+      "id": "component_matching",
+      "score": "4 (Excellent) | 3 (Good) | 2 (Fair) | 1 (Poor)",
+      "justification": "<concise, evidence-based explanation>"
+    },
+    {
+      "id": "interaction_matching",
+      "score": "4 (Excellent) | 3 (Good) | 2 (Fair) | 1 (Poor)",
+      "justification": "<concise, evidence-based explanation>"
+    }
+  ]
+}

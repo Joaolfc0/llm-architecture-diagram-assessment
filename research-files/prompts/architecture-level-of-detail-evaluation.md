@@ -30,13 +30,25 @@ In particular, evaluate:
 
 ### Output Format (IMPORTANT)
 
-Answer **only** using the structure below, in English:
+Return **only valid JSON** (no markdown, no prose, no code fences), in English:
 
-- **Rating**: [Exemplary Level of Detail | Acceptable Level of Detail | Insufficient Level of Detail | Deficient Level of Detail]
-- **Guideline Checks**:
-  - Element Detail: [4 (Excellent) | 3 (Good) | 2 (Fair) | 1 (Poor)]
-  - **Justification**:
-  - Interaction Detail: [4 (Excellent) | 3 (Good) | 2 (Fair) | 1 (Poor)]
-  - **Justification**:
-  - Overall Appropriateness for Developers and Architects: [4 (Excellent) | 3 (Good) | 2 (Fair) | 1 (Poor)]
-  - **Justification**:
+{
+  "criterion": "level_of_detail",
+  "guidelines": [
+    {
+      "id": "element_detail",
+      "score": "4 (Excellent) | 3 (Good) | 2 (Fair) | 1 (Poor)",
+      "justification": "<concise, evidence-based explanation>"
+    },
+    {
+      "id": "interaction_detail",
+      "score": "4 (Excellent) | 3 (Good) | 2 (Fair) | 1 (Poor)",
+      "justification": "<concise, evidence-based explanation>"
+    },
+    {
+      "id": "overall_appropriateness",
+      "score": "4 (Excellent) | 3 (Good) | 2 (Fair) | 1 (Poor)",
+      "justification": "<concise, evidence-based explanation>"
+    }
+  ]
+}
