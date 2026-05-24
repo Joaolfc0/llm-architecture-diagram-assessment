@@ -21,7 +21,7 @@ from claude_integration import client as claude
 # Asset paths relative to this script
 ASSETS_DIR = Path(__file__).resolve().parent.parent / "assets"
 DIAGRAM_PNG = ASSETS_DIR / "container-stack.png"
-DIAGRAM_XML = ASSETS_DIR / "container-stack.xml"
+DIAGRAM_XML = ASSETS_DIR / "container-stack.drawio.xml"
 DESCRIPTION_FILE = ASSETS_DIR / "description.txt"
 
 # Output directory
