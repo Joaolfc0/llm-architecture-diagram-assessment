@@ -1,0 +1,7 @@
+Diagram_ID,n_original,kept,discarded,kept_levels,status
+appwrite,3,P011; P014,P004,extensive; medium,ok
+geoserver-cloud,2,P002; P013,,medium; medium,ok
+magda-io,3,P016; P012,P003,extensive; extensive,ok
+research-modifiability-pattern-experiment,2,P005; P015,,medium; medium,ok
+sentry,2,P009; P008,,low; medium,ok
+spryker,2,P007; P006,,extensive; low,ok

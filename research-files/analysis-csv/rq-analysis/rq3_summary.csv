@@ -1,0 +1,14 @@
+metric,value
+n_total,253.0
+n_image,113.0
+n_text,73.0
+n_tie,67.0
+image_share_decided,0.6075
+image_share_ci_lo,0.5359
+image_share_ci_hi,0.6748
+gof_chi2,8.6022
+gof_p_value,0.003358
+indep_criterion_chi2,4.1944
+indep_criterion_p,0.380338
+indep_model_chi2,1.7977
+indep_model_p,0.179994

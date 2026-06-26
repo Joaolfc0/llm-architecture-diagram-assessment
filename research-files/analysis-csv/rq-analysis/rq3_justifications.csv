@@ -1,0 +1,79 @@
+Diagram_ID,Criterion,Guideline,Preference,Preferred_Format,Comparison_Justification
+research-modifiability-pattern-experiment,accuracy,component_matching,image,PNG,I agree that CategorySrv and WarehouseSrv are not explained in the textual description.
+magda-io,accuracy,component_matching,image,PNG,Response B brings the important detail about diagram showing the search engine as ElasticSearch while the text specifies OpenSearch.
+magda-io,accuracy,component_matching,image,PNG,"The diagram assigns ElasticSearch instead of OpenSearch as the engine, and adds components not mentioned in the description."
+magda-io,accuracy,component_matching,image,PNG,"Response B gets some details wrong, such as the apt naming on OpenSearch."
+spryker,accuracy,interaction_matching,image,PNG,"Resposta B é mais direta ao ponto, veja que a resposta A começa com uma contextualização."
+magda-io,accuracy,component_matching,image,PNG,Response B is more detailed and critical
+sentry,accuracy,component_matching,image,PNG,Response A is more nuanced
+magda-io,clarity,element_identification,image,PNG,Response A describes better the diagram.
+appwrite,clarity,reading_flow,image,PNG,"Response B sounds better because of the highlight to async vs sync paths. When dealing with queue it is important to be really explicit on how the pieces interact with it(recovery, dlq, brokers(?), clear queue?)"
+magda-io,clarity,specific_symbology,image,PNG,"Response B accurately detects the OpenSearch/ElasticSearch mismatch, and assigns a score that reflects the vague use of symbols."
+magda-io,clarity,element_identification,image,PNG,"I agree with the issues raised by Response B, but feel as if the score should be Fair."
+appwrite,clarity,symbol_label_readability,image,PNG,Response A is more concise.
+spryker,clarity,reading_flow,image,PNG,"A resposta A avalia como bom, porém a propria justificativa é uma inferência com explicação confusa."
+sentry,clarity,element_identification,image,PNG,more straight forward
+magda-io,completeness,coverage_main_components,image,PNG,Response A better describes what is missing in the diagram while both describe what is present in the diagram.
+magda-io,completeness,main_interactions_coverage,image,PNG,Response B has a better reading flow.
+appwrite,completeness,coverage_main_components,image,PNG,"Response B is more direct regarding the definition of ""Coverage of Main Components""."
+sentry,completeness,main_interactions_coverage,image,PNG,Response A seems to have guessed or know more than the diagram and description say
+research-modifiability-pattern-experiment,consistency,notation_uniformity,image,PNG,"I do not understand ""a datastore is depicted with a different symbol"" in Response B."
+magda-io,consistency,technology_symbols,image,PNG,Response B is more concise.
+appwrite,consistency,notation_uniformity,image,PNG,"Absolutely. Like I said previousli, color mapping without keys dont say anything to the reader really. The same goes to arrows and connectors.
+There is an established visual language to diagrams, which is not really taken into considerations in this one. e.g.: No db symbol, no delimitation between pieces, same shape for everything. 
+these arrows dont tell me a story"
+appwrite,consistency,technology_symbols,image,PNG,"Didnt even notice that but its a excellent point, the database box could be either a abstraction layer or a infra piece. How do I know this as a reader?
+Same goes for cache. 
+On that note: Cache interacts directly with the database? How come? Is this only showing me information flow?"
+magda-io,consistency,naming_consistency,image,PNG,Agree with inconsistencies referred in response A.
+magda-io,consistency,notation_uniformity,image,PNG,"The registry symbol used is consistent with database standards, response A wrongly assigns it as an error."
+magda-io,consistency,technology_symbols,image,PNG,"Response A highlights more important issues than B, and the score accurately reflects that."
+magda-io,consistency,naming_consistency,image,PNG,Response A didn't catch the OpenSearch/ElasticSearch inconsistency. I feel as if response B correctly detects vagueness in naming conventions.
+appwrite,consistency,notation_uniformity,image,PNG,"Response A tries to infer meanings, but being able to connect patterns doesn't mean they hold a clear and consistent notation. Response B makes it clear there is missing information."
+appwrite,consistency,technology_symbols,image,PNG,"Since technology symbols is a very specific topic, the limitations on storage and service notations are relevant enough to bring the score down to 2."
+magda-io,consistency,naming_consistency,image,PNG,more concise
+spryker,level_of_detail,element_detail,image,PNG,Achei a resposta A mais objetiva.
+sentry,level_of_detail,overall_appropriateness,image,PNG,more consistent score
+magda-io,accuracy,interaction_matching,text,SVG,Response B is way more detailed.
+appwrite,accuracy,interaction_matching,text,SVG,"In response A ""The public-facing SSL Gateway (ports 80/443) is shown correctly"" Feels like an assumption"
+magda-io,accuracy,interaction_matching,text,SVG,"Both raise issues with Minions readability, but I feel that response A correctly assigns a Fair score, considering the shortcomings mentioned."
+appwrite,accuracy,component_matching,text,SVG,For me it's ambiguous which of the components are microservices and where are the boundaries of the monolith.
+appwrite,accuracy,component_matching,text,SVG,"Response A is more concise and direct, which is good. Response B was more detailed showing, for example, the unusual order of the load balancer."
+sentry,accuracy,component_matching,text,XML,Response B makes assumptions about memchaded as the store for config/event ingestion caching which is made up
+sentry,accuracy,interaction_matching,text,XML,Response A makes information up when saying that relay reads from read from memcached
+research-modifiability-pattern-experiment,clarity,element_identification,text,XML,"Together, diagram and textual description make the main concepts clear."
+magda-io,clarity,reading_flow,text,SVG,Response B does a better job at explaining the reading flow.
+magda-io,clarity,symbol_label_readability,text,SVG,Response A uses a simpler language.
+appwrite,clarity,specific_symbology,text,SVG,"I think microservice and monolithic boundaries can be infered but the pressing issue for me is the lack of legend and specific symbology, so response B makes more sense"
+spryker,completeness,external_actors_coverage,text,XML,"A resposta B deveria ter dado nota 1, visto que não há explecitamente atores externos."
+magda-io,consistency,notation_uniformity,text,SVG,Response B provides a better review of the diagram related to notation definition.
+magda-io,consistency,notation_uniformity,text,SVG,Response B gets it right about line semantics and the use of horizontal bars.
+magda-io,consistency,notation_uniformity,text,SVG,Response B pointed about the different arrow style
+sentry,consistency,technology_symbols,text,XML,"Kafka is NOT rendered as a parallelogram/skewed box, very wrong"
+magda-io,level_of_detail,overall_appropriateness,text,SVG,Response A explain the shotcomings of the diagram better.
+appwrite,level_of_detail,interaction_detail,text,SVG,Both responses go in the same direction but B is more complete
+appwrite,level_of_detail,overall_appropriateness,text,SVG,Response B is just more through with it.
+appwrite,accuracy,component_matching,tie,Tie,"Response A just converts the textual part of the diagram into natural language. I dont think a diagram should only layout pieces. Response B jumps to conclusions, why is it assuming the cache is implemented via Redis? The diagram uses color grouping but this information is only a suggestions if no key is provided. 
+
+Regarding the representation of the mixed nature: It checks out if attached to the textual description which explicitely says that Appwriter is a monolith(?) Which kinda defeats the purpose of a good diagram (IMO)"
+appwrite,accuracy,interaction_matching,tie,Tie,The interactions are mostly there but the overall problem is lack of information
+geoserver-cloud,accuracy,component_matching,tie,Tie,TBH I didn't like any of the 2 answers.
+appwrite,accuracy,interaction_matching,tie,Tie,Both answers point out the same limitations of the diagram.
+spryker,clarity,specific_symbology,tie,Tie,Both show consistent issues.
+spryker,clarity,element_identification,tie,Tie,Both describe consistent issues.
+magda-io,clarity,symbol_label_readability,tie,Tie,"Both find issues that I wouldn't agree with, such as text or arrowheads being small."
+magda-io,clarity,reading_flow,tie,Tie,Very similar responses.
+appwrite,clarity,reading_flow,tie,Tie,Both answers point out the same limitations of the diagram.
+spryker,completeness,external_actors_coverage,tie,Tie,I guess the two responses are too hard.
+spryker,completeness,main_interactions_coverage,tie,Tie,Both describe consistent issues.
+magda-io,completeness,external_actors_coverage,tie,Tie,Both highlight issues such as the lack of user flow.
+magda-io,completeness,coverage_main_components,tie,Tie,"Both highlight the lack of Docker/Kubernetes orchestration in the diagram. Response A detects issues with vagueness in the API layer, and response B detects the OpenSearch/ElasticSearch mismatch."
+appwrite,completeness,external_actors_coverage,tie,Tie,Both answers point out the same limitations of the diagram.
+spryker,consistency,notation_uniformity,tie,Tie,"Both have some typos. For instance, in response A, it is understandable why ""DE - nginx"" have the same name in Yves and Zed. In response B, there is port to Storage Redis."
+spryker,consistency,notation_uniformity,tie,Tie,Empata porém existem informações complementares.
+spryker,level_of_detail,element_detail,tie,Tie,Both describe consistent issues.
+magda-io,level_of_detail,element_detail,tie,Tie,Both highlight details that are missing from the diagram.
+magda-io,level_of_detail,overall_appropriateness,tie,Tie,Both highlight shortcomings.
+magda-io,level_of_detail,interaction_detail,tie,Tie,Both highlight that the arrows lack any distinction between type of communication.
+appwrite,level_of_detail,element_detail,tie,Tie,Both answers point the same limitations of the diagram.
+appwrite,level_of_detail,interaction_detail,tie,Tie,Both answers point out the same limitations of the diagram.
