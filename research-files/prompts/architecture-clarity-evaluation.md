@@ -32,16 +32,32 @@ In particular, evaluate:
 
 ### Output Format (IMPORTANT)
 
-Answer **only** using the structure below, in English:
+Return **only valid JSON** (no markdown, no prose, no code fences), in English:
 
-- **Guideline Checks**:
-  - Element Identification: [4 (Excellent) | 3 (Good) | 2 (Fair) | 1 (Poor)]
-  - **Justification**:
-  - Reading Flow: [Exemplary | Acceptable | Insufficient  | Deficient ]
-  - **Justification**:
-  - Symbol and Label Readability: [4 (Excellent) | 3 (Good) | 2 (Fair) | 1 (Poor)]
-  - **Justification**:
-  - Specific Symbology: [4 (Excellent) | 3 (Good) | 2 (Fair) | 1 (Poor)]
-  - **Justification**:
+{
+  "criterion": "clarity",
+  "guidelines": [
+    {
+      "id": "element_identification",
+      "score": "4 (Excellent) | 3 (Good) | 2 (Fair) | 1 (Poor)",
+      "justification": "<concise, evidence-based explanation>"
+    },
+    {
+      "id": "reading_flow",
+      "score": "4 (Excellent) | 3 (Good) | 2 (Fair) | 1 (Poor)",
+      "justification": "<concise, evidence-based explanation>"
+    },
+    {
+      "id": "symbol_label_readability",
+      "score": "4 (Excellent) | 3 (Good) | 2 (Fair) | 1 (Poor)",
+      "justification": "<concise, evidence-based explanation>"
+    },
+    {
+      "id": "specific_symbology",
+      "score": "4 (Excellent) | 3 (Good) | 2 (Fair) | 1 (Poor)",
+      "justification": "<concise, evidence-based explanation>"
+    }
+  ]
+}
 
 

@@ -27,12 +27,25 @@ In particular, evaluate:
 
 ### Output Format (IMPORTANT)
 
-Answer **only** using the structure below, in English:
+Return **only valid JSON** (no markdown, no prose, no code fences), in English:
 
-- **Guideline Checks**:
-  - Coverage of Main Components: [4 (Excellent) | 3 (Good) | 2 (Fair) | 1 (Poor)]
-  - **Justification**:
-  - External Actors Coverage: [4 (Excellent) | 3 (Good) | 2 (Fair) | 1 (Poor)]
-  - **Justification**:
-  - Main Interactions Coverage: [4 (Excellent) | 3 (Good) | 2 (Fair) | 1 (Poor)]
-  - **Justification**:
+{
+  "criterion": "completeness",
+  "guidelines": [
+    {
+      "id": "coverage_main_components",
+      "score": "4 (Excellent) | 3 (Good) | 2 (Fair) | 1 (Poor)",
+      "justification": "<concise, evidence-based explanation>"
+    },
+    {
+      "id": "external_actors_coverage",
+      "score": "4 (Excellent) | 3 (Good) | 2 (Fair) | 1 (Poor)",
+      "justification": "<concise, evidence-based explanation>"
+    },
+    {
+      "id": "main_interactions_coverage",
+      "score": "4 (Excellent) | 3 (Good) | 2 (Fair) | 1 (Poor)",
+      "justification": "<concise, evidence-based explanation>"
+    }
+  ]
+}

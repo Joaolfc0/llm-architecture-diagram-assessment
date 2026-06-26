@@ -12,6 +12,10 @@ from pathlib import Path
 from datetime import datetime
 from openai import OpenAI
 from dotenv import load_dotenv
+from evaluation_output import (
+    format_validated_payload,
+    parse_and_validate_response,
+)
 
 # Load .env from this directory
 env_path = Path(__file__).parent / ".env"
@@ -140,9 +144,13 @@ def evaluate_with_image(
         model=MODEL,
         messages=messages
     )
+
+    raw_response = response.choices[0].message.content or ""
+    parsed_response = parse_and_validate_response(evaluation_type, raw_response)
     
     return {
-        "response": response.choices[0].message.content,
+        "response": raw_response,
+        "parsed_response": parsed_response,
         "usage": {
             "prompt_tokens": response.usage.prompt_tokens,
             "completion_tokens": response.usage.completion_tokens,
@@ -193,9 +201,13 @@ def evaluate_with_text(
         model=MODEL,
         messages=messages
     )
+
+    raw_response = response.choices[0].message.content or ""
+    parsed_response = parse_and_validate_response(evaluation_type, raw_response)
     
     return {
-        "response": response.choices[0].message.content,
+        "response": raw_response,
+        "parsed_response": parsed_response,
         "usage": {
             "prompt_tokens": response.usage.prompt_tokens,
             "completion_tokens": response.usage.completion_tokens,
@@ -238,7 +250,11 @@ def save_result(result: dict, evaluation_type: str, output_dir: str) -> str:
         if "error" in result:
             f.write(f"ERROR: {result['error']}\n")
         else:
-            f.write(result["response"])
+            parsed_response = result.get("parsed_response")
+            if parsed_response:
+                f.write(format_validated_payload(parsed_response))
+            else:
+                f.write(result["response"])
             f.write(f"\n\n{'='*60}\n")
             f.write(f"MODEL: {result['model']}\n")
             f.write(f"TOKENS USED: {result['usage']['total_tokens']} ")

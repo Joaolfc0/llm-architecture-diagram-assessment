@@ -1,104 +1,184 @@
-## Research materials (for anonymous review)
+## Replication package — LLM assessment of architecture diagrams
 
-This repository contains multiple artifacts, but **this README documents only** the contents under `research-files/`, which contains the study materials used for the LLM-based assessment of software architecture diagrams.
+This repository supports replication and review of a study on **LLM-based evaluation of software architecture diagrams** under different input representations (image vs text).
 
-The **anonymous audit site** (including the questions/prompts used in the auditing flow) is available at:
+**Anonymous audit site** (survey flow, prompts shown to experts):
 
-- `https://anonymous.4open.science/w/llm-assessment-audit-1238`
+- https://anonymous.4open.science/w/llm-assessment-audit-1238
 
-## Repository organization (documented scope: `research-files/`)
+---
 
-### `research-files/`
+## Quick guide for reviewers
 
-Top-level contents:
+If you are checking whether the study is reproducible, start here:
 
-- **`requirements.txt`**: Minimal Python dependencies for the evaluation clients (OpenAI + Gemini) and env var loading.
-- **`test_prompt_construction.py`**: Test suite that verifies prompt template substitution and ensures the ChatGPT/Gemini integrations construct identical prompts (image- and text-based).
-- **`venv/`**: Local Python virtual environment (if present on your machine). Not required to understand the study artifacts.
+| What you need | Where to look |
+|---|---|
+| **Expert survey responses (raw)** | [`research-files/analysis-csv/`](research-files/analysis-csv/) — three CSV files below |
+| **Diagram inputs** (image + text + description) | One folder per case study under [`research-files/`](research-files/) — see [Diagrams](#diagrams-case-studies) |
+| **LLM evaluation outputs** | [`research-files/analysis-csv/llm-evaluations/`](research-files/analysis-csv/llm-evaluations/) |
+| **Human ground truth** (aggregated) | [`research-files/analysis-csv/ground-truth/`](research-files/analysis-csv/ground-truth/) |
+| **Statistical analysis (RQ1–RQ3)** | [`research-files/analysis-csv/rq-analysis/`](research-files/analysis-csv/rq-analysis/) |
+| **Prompt templates** | [`research-files/prompts/`](research-files/prompts/) |
 
-Subfolders:
+**Privacy:** participant emails were replaced with anonymous IDs (`P001`–`P016`) in all published CSVs. The mapping file is not included in this package.
 
-### `research-files/prompts/`
+---
 
-Prompt templates used for each evaluation criterion. Each template contains placeholders:
+## Survey data (`research-files/analysis-csv/`)
 
-- `[Insert diagram here]` (replaced with SVG/XML text content or an image placeholder)
-- `[Insert textual description here]` (replaced with the case-study description text)
+All expert-facing data from the study are exported as CSV. Participants are identified by **`Expert_ID`** (e.g. `P005`).
 
-Files:
+### Study phases
 
-- **`architecture-accuracy-evaluation.md`**: Accuracy rubric prompt template.
-- **`architecture-clarity-evaluation.md`**: Clarity rubric prompt template.
-- **`architecture-completeness-evaluation.md`**: Completeness rubric prompt template.
-- **`architecture-consistency-evaluation.md`**: Consistency rubric prompt template.
-- **`architecture-level-of-detail-evaluation.md`**: Level-of-detail rubric prompt template.
+| Phase | File | Rows (approx.) | What each row is |
+|---|---|---:|---|
+| **Demographics** | [`llm-assesment-v2 - participant_demographics.csv`](research-files/analysis-csv/llm-assesment-v2%20-%20participant_demographics.csv) | 16 | One expert: academic profile, development experience, self-reported expertise, architecture topics |
+| **Ground-truth scoring** | [`llm-assesment-v2 - gt_scores.csv`](research-files/analysis-csv/llm-assesment-v2%20-%20gt_scores.csv) | 216 | One score: expert rates a `(Diagram, Criterion, Guideline)` on scale **1–4** |
+| **Pairwise preference (Phase 3)** | [`llm-assesment-v2 - pairwise_preferences.csv`](research-files/analysis-csv/llm-assesment-v2%20-%20pairwise_preferences.csv) | 253 | One comparison: expert picks better LLM reasoning (image / text / tie) |
 
-### `research-files/chatgpt_integration/`
+### Key columns
 
-Python client for running the evaluation prompts with OpenAI models.
+**Demographics**
 
-- **`client.py`**: Implements prompt loading, prompt construction for image/text inputs, API calls, and result saving.
-- **`env.example`**: Example environment file showing required variables (copy to `.env` locally if you run the scripts).
+- `Expert_ID` — anonymous participant code  
+- `Participant_Profile` — Undergraduate / Master's / PhD  
+- `Development_Experience`, `Architecture_Analysis_Experience`, `Microservices_Architecture_Experience`, `Quality_Attributes_Tradeoffs_Experience` — self-reported levels (`low` / `medium` / `extensive`)  
+- `Architecture_Topics` — comma-separated topics selected  
 
-### `research-files/gemini_integration/`
+**Ground-truth scores (`gt_scores.csv`)**
 
-Python client for running the evaluation prompts with Google Gemini models.
+- `Diagram_ID`, `Criterion`, `Guideline` — what was evaluated  
+- `Human_GT_Score` — ordinal score **1 (Poor) … 4 (Excellent)**  
+- `Expert_Comment` — optional free text  
 
-- **`client.py`**: Implements prompt loading, prompt construction for image/text inputs, API calls, and result saving.
-- **`env.example`**: Example environment file showing required variables (copy to `.env` locally if you run the scripts).
+**Pairwise preferences (`pairwise_preferences.csv`)**
 
-### `research-files/geoserver/`
+- `Diagram_ID`, `Criterion`, `Guideline` — comparison context  
+- `Internal_Source_Group` — `ChatGPT` or `Claude` (source model of the pair)  
+- `Response_A_Format`, `Response_B_Format` — `PNG`, `SVG`, or `XML`  
+- `Preferred_Format` — `PNG` (image), `SVG`/`XML` (text), or `Tie`  
+- `Comparison_Justification` — optional free text  
 
-Case study based on **GeoServer Cloud**.
+### Phase 3 responses by diagram
 
-- **`assets/`**: Inputs provided to the LLMs:
-  - `description.txt`: Textual architecture description.
-  - `gs_cloud_architecture_diagram.png`: Diagram image input.
-  - `gs_cloud_architecture_diagram.svg`: Diagram text (SVG) input.
-- **`scripts/`**:
-  - `run_evaluation.py`: Runs all criteria across models and input types, and writes results under `evaluations/`.
-- **`evaluations/`**: Saved outputs (if present). Organized by provider and input type:
-  - `chatgpt_png/`, `chatgpt_svg/`, `gemini_png/`, `gemini_svg/`
-  - Typical files include one `.txt` and one `.json` per criterion (e.g., `accuracy_YYYYMMDD_HHMMSS.*`) plus a `summary_*.txt`.
-- **`commands.txt`**: Example commands for running `scripts/run_evaluation.py`.
+| `Diagram_ID` | Pairwise comparisons |
+|---|---:|
+| `magda-io` | 74 |
+| `appwrite` | 42 |
+| `spryker` | 39 |
+| `research-modifiability-pattern-experiment` | 35 |
+| `geoserver-cloud` | 32 |
+| `sentry` | 31 |
+| **Total** | **253** |
 
-### `research-files/appwrite/`
+### Derived datasets (for analysis)
 
-Case study based on **Appwrite**(future).
+Built from the raw survey + LLM runs — see notebooks in each subfolder:
 
-- **`assets/`**:
-  - `description.txt`: Textual architecture description.
-  - `overview.drawio.png`: Diagram image input.
-  - `overview.drawio.svg`: Diagram text (SVG) input.
-- **`scripts/`**:
-  - `run_evaluation.py`: Runs all criteria across models and input types, and writes results under `evaluations/`.
-- **`evaluations/`**: Saved outputs (if present). Organized by provider and input type:
-  - `chatgpt_png/`, `chatgpt_svg/`, `gemini_png/`, `gemini_svg/`
-  - Typical files include one `.txt` and one `.json` per criterion plus a `summary_*.txt`.
-- **`commands.txt`**: Example commands for running `scripts/run_evaluation.py`.
+| Folder | Main outputs |
+|---|---|
+| [`ground-truth/`](research-files/analysis-csv/ground-truth/) | `ground_truth_ordinal.csv`, `ground_truth_binary.csv`, `selected_experts.csv` — two experts per diagram selected for GT aggregation (`build_ground_truth.ipynb`) |
+| [`llm-evaluations/`](research-files/analysis-csv/llm-evaluations/) | `evaluations_ordinal.csv`, `evaluations_binary.csv` — flattened LLM JSON outputs (`build_evaluations.ipynb`) |
+| [`rq-analysis/`](research-files/analysis-csv/rq-analysis/) | RQ1–RQ3 notebooks, result CSVs, figures, and narrative reports in [`rq-analysis/reports/`](research-files/analysis-csv/rq-analysis/reports/) |
 
-### `research-files/spryker/`
+**Evaluation criteria** (all phases): `accuracy`, `clarity`, `completeness`, `consistency`, `level_of_detail`. Each criterion has several **guidelines** (rubric sub-items); IDs match the prompt JSON schema (e.g. `notation_uniformity`, `component_matching`).
 
-Case study based on a containerized **Spryker demoshop stack** (future).
+---
 
-- **`assets/`**:
-  - `description.txt`: Textual description of the stack and port allocation scheme.
-  - `container-stack.png`: Diagram image input.
-  - `container-stack.xml`: Diagram text input (XML export).
-- **`scripts/`**:
-  - `run_evaluation.py`: Runs all criteria across models and input types, and writes results under `evaluations/`.
-- **`evaluations/`**: Saved outputs (if present). Intended to follow the same structure as other case studies (e.g., `chatgpt_png/`, `chatgpt_xml/`, `gemini_png/`, `gemini_xml/`), depending on what has been executed locally.
-- **`commands.txt`**: Example commands for running `scripts/run_evaluation.py`.
+## Diagrams (case studies)
 
-### `research-files/analise-csv/`
+Six open-source architecture diagrams were used. Each case study lives in its own folder under `research-files/`.
 
-Post-processing and reporting utilities for analyzing exported evaluation results.
+### Diagram index
 
-- **`analysis_mixed.py`**: Analysis variant for mixed conditions/inputs.
-- **`analysis_mixed_results.txt`**: Generated analysis outputs.
-- **`Estrutura de Planilha para Análise Granular - final - Estrutura de Planilha para Anál.csv`**: Spreadsheet template used for granular analysis.
-- **`generate_figures.py`**: Generates the PDF figures.
-- **`figure1_criteria.pdf`**, **`figure2_conditions.pdf`**, **`figure3_errors.pdf`**: Generated figures used for reporting.
-- **`extract_other.py`**: Utility script to isolate and inspect "other error" annotations in the granular analysis data.
+| `Diagram_ID` (in CSVs) | Folder | Source / topic |
+|---|---|---|
+| `appwrite` | [`research-files/appwrite/`](research-files/appwrite/) | Appwrite backend platform |
+| `geoserver-cloud` | [`research-files/geoserver/`](research-files/geoserver/) | GeoServer Cloud |
+| `magda-io` | [`research-files/magda-io/`](research-files/magda-io/) | Magda data portal |
+| `spryker` | [`research-files/spryker/`](research-files/spryker/) | Spryker demoshop container stack |
+| `sentry` | [`research-files/sentry/`](research-files/sentry/) | Sentry ingestion architecture |
+| `research-modifiability-pattern-experiment` | [`research-files/research-modifiability-pattern-experiment/`](research-files/research-modifiability-pattern-experiment/) | Research modifiability pattern |
 
+> **Note:** CSVs use `geoserver-cloud`; the folder name is `geoserver`.
 
+### Standard layout (every case study)
+
+```
+<case-study>/
+├── assets/
+│   ├── description.txt          # Textual architecture description (always used)
+│   ├── *.png                    # Image representation (PNG → "image" in analysis)
+│   └── *.svg / *.xml            # Text representation (SVG/XML → "text" in analysis)
+├── scripts/
+│   └── run_evaluation.py        # Runs all criteria × models × formats
+├── evaluations/                 # Raw LLM outputs (JSON + text per run)
+│   ├── chatgpt_png/
+│   ├── chatgpt_svg/  (or chatgpt_xml/)
+│   ├── claude_png/
+│   └── claude_svg/   (or claude_xml/)
+└── commands.txt                 # Example commands
+```
+
+### Input files per diagram
+
+| Diagram | Image (PNG) | Text (SVG/XML) | Description |
+|---|---|---|---|
+| appwrite | `overview.drawio.png` | `overview.drawio.svg` | `description.txt` |
+| geoserver-cloud | `gs_cloud_architecture_diagram.png` | `gs_cloud_architecture_diagram.svg` | `description.txt` |
+| magda-io | `magda.drawio.png` | `marketecture.svg` | `description.txt` |
+| spryker | `container-stack.png` | `container-stack.drawio.xml` | `description.txt` |
+| sentry | `sentry.drawio.png` | `sentry.drawio.xml` | `description.txt` |
+| research-modifiability-pattern-experiment | `02_architecture-final.png` | `02_architecture-final_draw.io.xml` | `description.txt` |
+
+### LLM experimental design (per diagram)
+
+- **Models:** ChatGPT, Claude  
+- **Representations:** PNG (image) vs SVG/XML (text)  
+- **Criteria:** 5 rubrics × multiple guidelines each  
+- **Runs:** one JSON (+ text log) per `(model, format, criterion)` — see [`llm-evaluations/trials_selected.csv`](research-files/analysis-csv/llm-evaluations/trials_selected.csv) for the exact file manifest  
+
+Ground-truth and pairwise analyses use **6 diagrams**
+
+---
+
+## Prompts (`research-files/prompts/`)
+
+One markdown template per criterion. Placeholders `[Insert diagram here]` and `[Insert textual description here]` are filled at runtime. The LLM must return JSON with per-guideline scores 1–4 and justifications.
+
+- `architecture-accuracy-evaluation.md`
+- `architecture-clarity-evaluation.md`
+- `architecture-completeness-evaluation.md`
+- `architecture-consistency-evaluation.md`
+- `architecture-level-of-detail-evaluation.md`
+
+---
+
+## LLM clients
+
+- [`research-files/chatgpt_integration/client.py`](research-files/chatgpt_integration/client.py) — OpenAI  
+- [`research-files/claude_integration/`](research-files/claude_integration/) — Anthropic  
+
+Batch runners: [`run_all_chatgpt.py`](research-files/run_all_chatgpt.py), [`run_all_claude.py`](research-files/run_all_claude.py).
+
+---
+
+## Reproducing the analysis
+
+```texts
+1. ground-truth/build_ground_truth.ipynb   → ground_truth_*.csv
+2. llm-evaluations/build_evaluations.ipynb → evaluations_*.csv
+3. rq-analysis/rq1_overall.ipynb
+4. rq-analysis/rq2_per_criterion.ipynb
+5. rq-analysis/rq3_preference.ipynb
+```
+
+Shared helpers: [`rq-analysis/analysis_utils.py`](research-files/analysis-csv/rq-analysis/analysis_utils.py).
+
+---
+
+## Other folders (not required for survey/diagram review)
+
+- **`aea/`** — Google Apps Script app used to collect expert responses (gitignored in full deployments; audit mirror linked above).  
+- **`venv/`**, **`evaluations/`** — local/runtime artifacts; may be absent in a minimal checkout.

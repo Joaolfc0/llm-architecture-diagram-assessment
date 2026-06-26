@@ -17,18 +17,35 @@ In particular, evaluate:
 1. **Notation Definition and Uniformity**  
    - Does the diagram use a clear notation for different types of elements (services, databases, communication channels, external actors) and apply it consistently?
 
-2. **Naming and Representation Consistency**  
+2. **Technology Symbols**  
+   - Are technology symbols used consistently throughout the diagram (e.g., the same visual convention for databases, queues, caches, and other technology types)?
+
+3. **Naming and Representation Consistency**  
    - Are similar elements named and represented consistently across the diagram and description (no conflicting names or mixed styles for the same type of element)?
+
 ---
 
 ### Output Format (IMPORTANT)
 
-Answer **only** using the structure below, in English:
+Return **only valid JSON** (no markdown, no prose, no code fences), in English:
 
-- **Guideline Checks**:
-  - Notation Definition and Uniformity: [4 (Excellent) | 3 (Good) | 2 (Fair) | 1 (Poor)]
-  - **Justification**:
-  - Technology Symbols: [4 (Excellent) | 3 (Good) | 2 (Fair) | 1 (Poor)]
-  - **Justification**:
-  - Naming and Representation Consistency: [4 (Excellent) | 3 (Good) | 2 (Fair) | 1 (Poor)]
-  - **Justification**:
+{
+  "criterion": "consistency",
+  "guidelines": [
+    {
+      "id": "notation_uniformity",
+      "score": "4 (Excellent) | 3 (Good) | 2 (Fair) | 1 (Poor)",
+      "justification": "<concise, evidence-based explanation>"
+    },
+    {
+      "id": "technology_symbols",
+      "score": "4 (Excellent) | 3 (Good) | 2 (Fair) | 1 (Poor)",
+      "justification": "<concise, evidence-based explanation>"
+    },
+    {
+      "id": "naming_consistency",
+      "score": "4 (Excellent) | 3 (Good) | 2 (Fair) | 1 (Poor)",
+      "justification": "<concise, evidence-based explanation>"
+    }
+  ]
+}

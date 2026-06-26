@@ -1,0 +1,260 @@
+Submission_ID,Expert_ID,Diagram_ID,Criterion,Guideline,Internal_Source_Group,Response_A_Output_ID,Response_A_Format,Response_B_Output_ID,Response_B_Format,Preferred_Label,Preferred_Format,Comparison_Justification,Timestamp
+P005,P005,research-modifiability-pattern-experiment,accuracy,component_matching,ChatGPT,OUT_106,XML,OUT_101,PNG,Response B,PNG,I agree that CategorySrv and WarehouseSrv are not explained in the textual description.,2026-05-25T18:34:48.126Z
+P005,P005,research-modifiability-pattern-experiment,clarity,element_identification,ChatGPT,OUT_102,PNG,OUT_107,XML,Response B,XML,"Together, diagram and textual description make the main concepts clear.",2026-05-25T18:36:44.208Z
+P005,P005,research-modifiability-pattern-experiment,completeness,coverage_main_components,ChatGPT,OUT_103,PNG,OUT_108,XML,Response A,PNG,,2026-05-25T18:38:17.224Z
+P005,P005,research-modifiability-pattern-experiment,consistency,notation_uniformity,ChatGPT,OUT_104,PNG,OUT_109,XML,Response A,PNG,"I do not understand ""a datastore is depicted with a different symbol"" in Response B.",2026-05-25T18:40:08.056Z
+P005,P005,research-modifiability-pattern-experiment,level_of_detail,element_detail,ChatGPT,OUT_110,XML,OUT_105,PNG,Response A,XML,,2026-05-25T18:40:50.431Z
+P007,P007,spryker,accuracy,component_matching,ChatGPT,OUT_041,PNG,OUT_046,XML,Response B,XML,,2026-05-27T10:15:35.611Z
+P007,P007,spryker,clarity,element_identification,ChatGPT,OUT_047,XML,OUT_042,PNG,Response B,PNG,,2026-05-27T10:16:33.752Z
+P007,P007,spryker,completeness,coverage_main_components,ChatGPT,OUT_048,XML,OUT_043,PNG,Response A,XML,,2026-05-27T10:18:29.057Z
+P007,P007,spryker,consistency,notation_uniformity,ChatGPT,OUT_049,XML,OUT_044,PNG,Tie,Tie,"Both have some typos. For instance, in response A, it is understandable why ""DE - nginx"" have the same name in Yves and Zed. In response B, there is port to Storage Redis.",2026-05-27T10:22:23.569Z
+P007,P007,spryker,level_of_detail,element_detail,ChatGPT,OUT_045,PNG,OUT_050,XML,Tie,Tie,,2026-05-27T10:23:14.756Z
+P007,P007,spryker,accuracy,interaction_matching,ChatGPT,OUT_046,XML,OUT_041,PNG,Response A,XML,,2026-05-27T10:24:35.941Z
+P007,P007,spryker,clarity,reading_flow,ChatGPT,OUT_047,XML,OUT_042,PNG,Response B,PNG,,2026-05-27T10:25:47.314Z
+P007,P007,spryker,completeness,external_actors_coverage,ChatGPT,OUT_048,XML,OUT_043,PNG,Response B,PNG,,2026-05-27T10:26:02.305Z
+P007,P007,spryker,consistency,technology_symbols,ChatGPT,OUT_044,PNG,OUT_049,XML,Response A,PNG,,2026-05-27T10:27:12.750Z
+P007,P007,spryker,level_of_detail,interaction_detail,ChatGPT,OUT_045,PNG,OUT_050,XML,Response B,XML,,2026-05-27T10:28:13.131Z
+P007,P007,spryker,accuracy,component_matching,Claude,OUT_056,XML,OUT_051,PNG,Tie,Tie,,2026-05-27T10:29:21.893Z
+P007,P007,spryker,clarity,symbol_label_readability,ChatGPT,OUT_042,PNG,OUT_047,XML,Response A,PNG,,2026-05-27T10:29:47.542Z
+P007,P007,spryker,completeness,main_interactions_coverage,ChatGPT,OUT_043,PNG,OUT_048,XML,Response B,XML,,2026-05-27T10:30:34.021Z
+P007,P007,spryker,consistency,naming_consistency,ChatGPT,OUT_049,XML,OUT_044,PNG,Response B,PNG,,2026-05-27T10:31:19.621Z
+P007,P007,spryker,level_of_detail,overall_appropriateness,ChatGPT,OUT_045,PNG,OUT_050,XML,Response A,PNG,,2026-05-27T10:31:44.130Z
+P007,P007,spryker,accuracy,interaction_matching,Claude,OUT_051,PNG,OUT_056,XML,Response A,PNG,,2026-05-27T10:51:42.190Z
+P007,P007,spryker,clarity,specific_symbology,ChatGPT,OUT_042,PNG,OUT_047,XML,Tie,Tie,Both show consistent issues.,2026-05-27T10:52:15.866Z
+P007,P007,spryker,completeness,coverage_main_components,Claude,OUT_053,PNG,OUT_058,XML,Response A,PNG,,2026-05-27T10:52:38.338Z
+P007,P007,spryker,consistency,notation_uniformity,Claude,OUT_054,PNG,OUT_059,XML,Response B,XML,,2026-05-27T10:53:32.201Z
+P007,P007,spryker,level_of_detail,element_detail,Claude,OUT_060,XML,OUT_055,PNG,Tie,Tie,Both describe consistent issues.,2026-05-27T10:54:23.650Z
+P007,P007,spryker,clarity,element_identification,Claude,OUT_052,PNG,OUT_057,XML,Tie,Tie,Both describe consistent issues.,2026-05-27T10:55:10.276Z
+P007,P007,spryker,completeness,external_actors_coverage,Claude,OUT_053,PNG,OUT_058,XML,Tie,Tie,I guess the two responses are too hard.,2026-05-27T10:56:01.339Z
+P007,P007,spryker,consistency,technology_symbols,Claude,OUT_059,XML,OUT_054,PNG,Response A,XML,,2026-05-27T10:56:29.174Z
+P007,P007,spryker,level_of_detail,interaction_detail,Claude,OUT_060,XML,OUT_055,PNG,Response A,XML,,2026-05-27T10:56:45.356Z
+P007,P007,spryker,clarity,reading_flow,Claude,OUT_052,PNG,OUT_057,XML,Response B,XML,,2026-05-27T10:56:51.356Z
+P007,P007,spryker,completeness,main_interactions_coverage,Claude,OUT_058,XML,OUT_053,PNG,Tie,Tie,Both describe consistent issues.,2026-05-27T10:57:06.896Z
+P007,P007,spryker,consistency,naming_consistency,Claude,OUT_054,PNG,OUT_059,XML,Response B,XML,,2026-05-27T10:57:16.945Z
+P007,P007,spryker,level_of_detail,overall_appropriateness,Claude,OUT_060,XML,OUT_055,PNG,Response A,XML,,2026-05-27T10:57:23.476Z
+P007,P007,spryker,clarity,symbol_label_readability,Claude,OUT_057,XML,OUT_052,PNG,Response A,XML,,2026-05-27T10:57:29.435Z
+P016,P016,magda-io,accuracy,component_matching,ChatGPT,OUT_086,SVG,OUT_081,PNG,Response B,PNG,Response B brings the important detail about diagram showing the search engine as ElasticSearch while the text specifies OpenSearch.,2026-05-31T23:38:16.501Z
+P016,P016,magda-io,clarity,element_identification,ChatGPT,OUT_082,PNG,OUT_087,SVG,Response A,PNG,Response A describes better the diagram.,2026-05-31T23:40:15.817Z
+P016,P016,magda-io,completeness,coverage_main_components,ChatGPT,OUT_083,PNG,OUT_088,SVG,Response A,PNG,Response A better describes what is missing in the diagram while both describe what is present in the diagram.,2026-05-31T23:41:16.051Z
+P016,P016,magda-io,consistency,notation_uniformity,ChatGPT,OUT_084,PNG,OUT_089,SVG,Response B,SVG,Response B provides a better review of the diagram related to notation definition.,2026-05-31T23:43:43.475Z
+P016,P016,magda-io,accuracy,interaction_matching,ChatGPT,OUT_081,PNG,OUT_086,SVG,Response B,SVG,Response B is way more detailed.,2026-05-31T23:46:04.073Z
+P016,P016,magda-io,clarity,reading_flow,ChatGPT,OUT_082,PNG,OUT_087,SVG,Response B,SVG,Response B does a better job at explaining the reading flow.,2026-05-31T23:47:24.857Z
+P016,P016,magda-io,completeness,external_actors_coverage,ChatGPT,OUT_083,PNG,OUT_088,SVG,Tie,Tie,,2026-05-31T23:47:37.057Z
+P016,P016,magda-io,consistency,technology_symbols,ChatGPT,OUT_089,SVG,OUT_084,PNG,Response B,PNG,Response B is more concise.,2026-05-31T23:48:14.057Z
+P016,P016,magda-io,level_of_detail,interaction_detail,ChatGPT,OUT_090,SVG,OUT_085,PNG,Tie,Tie,,2026-05-31T23:49:30.174Z
+P016,P016,magda-io,accuracy,component_matching,Claude,OUT_091,PNG,OUT_096,SVG,Tie,Tie,,2026-05-31T23:50:16.224Z
+P016,P016,magda-io,clarity,symbol_label_readability,ChatGPT,OUT_087,SVG,OUT_082,PNG,Response A,SVG,Response A uses a simpler language.,2026-05-31T23:50:34.439Z
+P016,P016,magda-io,completeness,main_interactions_coverage,ChatGPT,OUT_088,SVG,OUT_083,PNG,Response B,PNG,Response B has a better reading flow.,2026-05-31T23:51:13.057Z
+P016,P016,magda-io,consistency,naming_consistency,ChatGPT,OUT_084,PNG,OUT_089,SVG,Tie,Tie,,2026-05-31T23:51:26.390Z
+P016,P016,magda-io,level_of_detail,overall_appropriateness,ChatGPT,OUT_090,SVG,OUT_085,PNG,Response A,SVG,Response A explain the shotcomings of the diagram better.,2026-05-31T23:52:06.690Z
+P011,P011,appwrite,accuracy,component_matching,ChatGPT,OUT_021,PNG,OUT_026,SVG,Tie,Tie,"Response A just converts the textual part of the diagram into natural language. I dont think a diagram should only layout pieces. Response B jumps to conclusions, why is it assuming the cache is implemented via Redis? The diagram uses color grouping but this information is only a suggestions if no key is provided. 
+
+Regarding the representation of the mixed nature: It checks out if attached to the textual description which explicitely says that Appwriter is a monolith(?) Which kinda defeats the purpose of a good diagram (IMO)",2026-06-02T15:57:35.580Z
+P011,P011,appwrite,clarity,element_identification,ChatGPT,OUT_027,SVG,OUT_022,PNG,Response B,PNG,,2026-06-02T15:59:03.180Z
+P011,P011,appwrite,completeness,coverage_main_components,ChatGPT,OUT_028,SVG,OUT_023,PNG,Response B,PNG,,2026-06-02T16:00:02.417Z
+P011,P011,appwrite,consistency,notation_uniformity,ChatGPT,OUT_029,SVG,OUT_024,PNG,Response B,PNG,"Absolutely. Like I said previousli, color mapping without keys dont say anything to the reader really. The same goes to arrows and connectors.
+There is an established visual language to diagrams, which is not really taken into considerations in this one. e.g.: No db symbol, no delimitation between pieces, same shape for everything. 
+these arrows dont tell me a story",2026-06-02T16:02:53.025Z
+P011,P011,appwrite,level_of_detail,element_detail,ChatGPT,OUT_025,PNG,OUT_030,SVG,Tie,Tie,,2026-06-02T16:06:58.826Z
+P011,P011,appwrite,accuracy,interaction_matching,ChatGPT,OUT_026,SVG,OUT_021,PNG,Tie,Tie,The interactions are mostly there but the overall problem is lack of information,2026-06-02T16:11:10.529Z
+P011,P011,appwrite,clarity,reading_flow,ChatGPT,OUT_027,SVG,OUT_022,PNG,Response B,PNG,"Response B sounds better because of the highlight to async vs sync paths. When dealing with queue it is important to be really explicit on how the pieces interact with it(recovery, dlq, brokers(?), clear queue?)",2026-06-02T16:15:09.251Z
+P011,P011,appwrite,completeness,external_actors_coverage,ChatGPT,OUT_028,SVG,OUT_023,PNG,Response A,SVG,,2026-06-02T16:15:41.443Z
+P011,P011,appwrite,consistency,technology_symbols,ChatGPT,OUT_024,PNG,OUT_029,SVG,Response A,PNG,"Didnt even notice that but its a excellent point, the database box could be either a abstraction layer or a infra piece. How do I know this as a reader?
+Same goes for cache. 
+On that note: Cache interacts directly with the database? How come? Is this only showing me information flow?",2026-06-02T16:17:33.262Z
+P011,P011,appwrite,level_of_detail,interaction_detail,ChatGPT,OUT_025,PNG,OUT_030,SVG,Response B,SVG,Both responses go in the same direction but B is more complete,2026-06-02T16:18:43.309Z
+P011,P011,appwrite,accuracy,component_matching,Claude,OUT_036,SVG,OUT_031,PNG,Tie,Tie,,2026-06-02T16:19:01.129Z
+P011,P011,appwrite,clarity,symbol_label_readability,ChatGPT,OUT_022,PNG,OUT_027,SVG,Response B,SVG,,2026-06-02T16:24:14.689Z
+P011,P011,appwrite,completeness,main_interactions_coverage,ChatGPT,OUT_023,PNG,OUT_028,SVG,Response B,SVG,,2026-06-02T16:24:33.152Z
+P011,P011,appwrite,consistency,naming_consistency,ChatGPT,OUT_029,SVG,OUT_024,PNG,Tie,Tie,,2026-06-02T16:26:52.682Z
+P011,P011,appwrite,level_of_detail,overall_appropriateness,ChatGPT,OUT_025,PNG,OUT_030,SVG,Response B,SVG,Response B is just more through with it.,2026-06-02T16:27:50.461Z
+P011,P011,appwrite,accuracy,interaction_matching,Claude,OUT_031,PNG,OUT_036,SVG,Response B,SVG,"In response A ""The public-facing SSL Gateway (ports 80/443) is shown correctly"" Feels like an assumption",2026-06-02T16:29:34.983Z
+P013,P013,geoserver-cloud,accuracy,component_matching,ChatGPT,OUT_001,PNG,OUT_006,SVG,Tie,Tie,TBH I didn't like any of the 2 answers.,2026-06-02T16:57:15.770Z
+P013,P013,geoserver-cloud,clarity,element_identification,ChatGPT,OUT_007,SVG,OUT_002,PNG,Response B,PNG,,2026-06-02T16:59:39.115Z
+P013,P013,geoserver-cloud,completeness,coverage_main_components,ChatGPT,OUT_008,SVG,OUT_003,PNG,Response B,PNG,,2026-06-02T17:03:30.047Z
+P013,P013,geoserver-cloud,consistency,notation_uniformity,ChatGPT,OUT_009,SVG,OUT_004,PNG,Tie,Tie,,2026-06-02T17:07:23.584Z
+P011,P011,appwrite,clarity,specific_symbology,ChatGPT,OUT_022,PNG,OUT_027,SVG,Response B,SVG,"I think microservice and monolithic boundaries can be infered but the pressing issue for me is the lack of legend and specific symbology, so response B makes more sense",2026-06-02T17:38:32.806Z
+P009,P009,sentry,accuracy,component_matching,ChatGPT,OUT_066,XML,OUT_061,PNG,Response B,PNG,,2026-06-02T17:42:53.777Z
+P003,P003,magda-io,accuracy,component_matching,ChatGPT,OUT_086,SVG,OUT_081,PNG,Response B,PNG,"The diagram assigns ElasticSearch instead of OpenSearch as the engine, and adds components not mentioned in the description.",2026-06-02T18:58:13.685Z
+P003,P003,magda-io,clarity,element_identification,ChatGPT,OUT_082,PNG,OUT_087,SVG,Tie,Tie,,2026-06-02T19:01:10.444Z
+P003,P003,magda-io,completeness,coverage_main_components,ChatGPT,OUT_083,PNG,OUT_088,SVG,Response A,PNG,,2026-06-02T19:04:52.043Z
+P003,P003,magda-io,consistency,notation_uniformity,ChatGPT,OUT_084,PNG,OUT_089,SVG,Response B,SVG,Response B gets it right about line semantics and the use of horizontal bars.,2026-06-02T19:05:42.487Z
+P003,P003,magda-io,level_of_detail,element_detail,ChatGPT,OUT_090,SVG,OUT_085,PNG,Tie,Tie,Both highlight details that are missing from the diagram.,2026-06-02T19:06:18.853Z
+P003,P003,magda-io,accuracy,interaction_matching,ChatGPT,OUT_081,PNG,OUT_086,SVG,Response B,SVG,,2026-06-02T19:07:43.591Z
+P003,P003,magda-io,clarity,reading_flow,ChatGPT,OUT_082,PNG,OUT_087,SVG,Response B,SVG,,2026-06-02T19:09:49.791Z
+P003,P003,magda-io,completeness,external_actors_coverage,ChatGPT,OUT_083,PNG,OUT_088,SVG,Tie,Tie,Both highlight issues such as the lack of user flow.,2026-06-02T19:11:20.875Z
+P003,P003,magda-io,consistency,technology_symbols,ChatGPT,OUT_089,SVG,OUT_084,PNG,Response B,PNG,,2026-06-02T19:11:41.451Z
+P003,P003,magda-io,level_of_detail,interaction_detail,ChatGPT,OUT_090,SVG,OUT_085,PNG,Tie,Tie,,2026-06-02T19:16:02.396Z
+P003,P003,magda-io,accuracy,component_matching,Claude,OUT_091,PNG,OUT_096,SVG,Response A,PNG,"Response B gets some details wrong, such as the apt naming on OpenSearch.",2026-06-02T19:16:31.329Z
+P003,P003,magda-io,clarity,symbol_label_readability,ChatGPT,OUT_087,SVG,OUT_082,PNG,Tie,Tie,"Both find issues that I wouldn't agree with, such as text or arrowheads being small.",2026-06-02T19:17:22.997Z
+P003,P003,magda-io,completeness,main_interactions_coverage,ChatGPT,OUT_088,SVG,OUT_083,PNG,Response A,SVG,,2026-06-02T19:19:16.730Z
+P003,P003,magda-io,consistency,naming_consistency,ChatGPT,OUT_084,PNG,OUT_089,SVG,Response A,PNG,Agree with inconsistencies referred in response A.,2026-06-02T19:22:18.502Z
+P003,P003,magda-io,level_of_detail,overall_appropriateness,ChatGPT,OUT_090,SVG,OUT_085,PNG,Tie,Tie,Both highlight shortcomings.,2026-06-02T19:24:45.425Z
+P003,P003,magda-io,accuracy,interaction_matching,Claude,OUT_096,SVG,OUT_091,PNG,Response A,SVG,"Both raise issues with Minions readability, but I feel that response A correctly assigns a Fair score, considering the shortcomings mentioned.",2026-06-02T19:26:16.633Z
+P003,P003,magda-io,clarity,specific_symbology,ChatGPT,OUT_087,SVG,OUT_082,PNG,Response B,PNG,"Response B accurately detects the OpenSearch/ElasticSearch mismatch, and assigns a score that reflects the vague use of symbols.",2026-06-02T19:26:54.758Z
+P003,P003,magda-io,completeness,coverage_main_components,Claude,OUT_098,SVG,OUT_093,PNG,Tie,Tie,"Both highlight the lack of Docker/Kubernetes orchestration in the diagram. Response A detects issues with vagueness in the API layer, and response B detects the OpenSearch/ElasticSearch mismatch.",2026-06-02T19:28:14.174Z
+P003,P003,magda-io,consistency,notation_uniformity,Claude,OUT_099,SVG,OUT_094,PNG,Response B,PNG,"The registry symbol used is consistent with database standards, response A wrongly assigns it as an error.",2026-06-02T19:31:55.861Z
+P003,P003,magda-io,level_of_detail,element_detail,Claude,OUT_095,PNG,OUT_100,SVG,Tie,Tie,,2026-06-02T19:32:25.236Z
+P003,P003,magda-io,clarity,element_identification,Claude,OUT_097,SVG,OUT_092,PNG,Response B,PNG,"I agree with the issues raised by Response B, but feel as if the score should be Fair.",2026-06-02T19:33:26.075Z
+P003,P003,magda-io,completeness,external_actors_coverage,Claude,OUT_098,SVG,OUT_093,PNG,Tie,Tie,,2026-06-02T19:33:34.489Z
+P003,P003,magda-io,consistency,technology_symbols,Claude,OUT_094,PNG,OUT_099,SVG,Response A,PNG,"Response A highlights more important issues than B, and the score accurately reflects that.",2026-06-02T19:34:13.603Z
+P003,P003,magda-io,level_of_detail,interaction_detail,Claude,OUT_095,PNG,OUT_100,SVG,Tie,Tie,Both highlight that the arrows lack any distinction between type of communication.,2026-06-02T19:34:51.263Z
+P003,P003,magda-io,clarity,reading_flow,Claude,OUT_097,SVG,OUT_092,PNG,Tie,Tie,Very similar responses.,2026-06-02T19:35:14.863Z
+P003,P003,magda-io,completeness,main_interactions_coverage,Claude,OUT_093,PNG,OUT_098,SVG,Response B,SVG,,2026-06-02T19:36:00.840Z
+P003,P003,magda-io,consistency,naming_consistency,Claude,OUT_099,SVG,OUT_094,PNG,Response B,PNG,Response A didn't catch the OpenSearch/ElasticSearch inconsistency. I feel as if response B correctly detects vagueness in naming conventions.,2026-06-02T19:36:57.957Z
+P003,P003,magda-io,level_of_detail,overall_appropriateness,Claude,OUT_095,PNG,OUT_100,SVG,Response A,PNG,,2026-06-02T19:37:04.191Z
+P003,P003,magda-io,clarity,symbol_label_readability,Claude,OUT_092,PNG,OUT_097,SVG,Tie,Tie,,2026-06-02T19:37:13.570Z
+P003,P003,magda-io,clarity,specific_symbology,Claude,OUT_092,PNG,OUT_097,SVG,Response B,SVG,,2026-06-02T19:37:28.374Z
+P015,P015,research-modifiability-pattern-experiment,accuracy,component_matching,ChatGPT,OUT_106,XML,OUT_101,PNG,Response B,PNG,,2026-06-02T20:00:14.245Z
+P015,P015,research-modifiability-pattern-experiment,clarity,element_identification,ChatGPT,OUT_102,PNG,OUT_107,XML,Response A,PNG,,2026-06-02T20:00:32.129Z
+P015,P015,research-modifiability-pattern-experiment,completeness,coverage_main_components,ChatGPT,OUT_103,PNG,OUT_108,XML,Tie,Tie,,2026-06-02T20:01:00.446Z
+P015,P015,research-modifiability-pattern-experiment,consistency,notation_uniformity,ChatGPT,OUT_104,PNG,OUT_109,XML,Tie,Tie,,2026-06-02T20:01:49.593Z
+P015,P015,research-modifiability-pattern-experiment,level_of_detail,element_detail,ChatGPT,OUT_110,XML,OUT_105,PNG,Response A,XML,,2026-06-02T20:02:25.028Z
+P015,P015,research-modifiability-pattern-experiment,accuracy,interaction_matching,ChatGPT,OUT_101,PNG,OUT_106,XML,Response A,PNG,,2026-06-02T20:02:56.761Z
+P015,P015,research-modifiability-pattern-experiment,clarity,reading_flow,ChatGPT,OUT_102,PNG,OUT_107,XML,Response A,PNG,,2026-06-02T20:03:31.765Z
+P015,P015,research-modifiability-pattern-experiment,completeness,external_actors_coverage,ChatGPT,OUT_103,PNG,OUT_108,XML,Response A,PNG,,2026-06-02T20:03:50.127Z
+P015,P015,research-modifiability-pattern-experiment,consistency,technology_symbols,ChatGPT,OUT_109,XML,OUT_104,PNG,Response B,PNG,,2026-06-02T20:04:08.012Z
+P015,P015,research-modifiability-pattern-experiment,level_of_detail,interaction_detail,ChatGPT,OUT_110,XML,OUT_105,PNG,Response B,PNG,,2026-06-02T20:04:29.128Z
+P014,P014,appwrite,accuracy,component_matching,ChatGPT,OUT_021,PNG,OUT_026,SVG,Response B,SVG,For me it's ambiguous which of the components are microservices and where are the boundaries of the monolith.,2026-06-02T20:05:01.759Z
+P015,P015,research-modifiability-pattern-experiment,accuracy,component_matching,Claude,OUT_111,PNG,OUT_116,XML,Response A,PNG,,2026-06-02T20:05:40.143Z
+P015,P015,research-modifiability-pattern-experiment,clarity,symbol_label_readability,ChatGPT,OUT_107,XML,OUT_102,PNG,Response A,XML,,2026-06-02T20:06:00.839Z
+P015,P015,research-modifiability-pattern-experiment,completeness,main_interactions_coverage,ChatGPT,OUT_108,XML,OUT_103,PNG,Response A,XML,,2026-06-02T20:06:12.357Z
+P015,P015,research-modifiability-pattern-experiment,consistency,naming_consistency,ChatGPT,OUT_104,PNG,OUT_109,XML,Response B,XML,,2026-06-02T20:06:34.990Z
+P015,P015,research-modifiability-pattern-experiment,level_of_detail,overall_appropriateness,ChatGPT,OUT_110,XML,OUT_105,PNG,Response A,XML,,2026-06-02T20:06:43.823Z
+P015,P015,research-modifiability-pattern-experiment,accuracy,interaction_matching,Claude,OUT_116,XML,OUT_111,PNG,Response B,PNG,,2026-06-02T20:06:52.806Z
+P015,P015,research-modifiability-pattern-experiment,clarity,specific_symbology,ChatGPT,OUT_107,XML,OUT_102,PNG,Tie,Tie,,2026-06-02T20:07:05.756Z
+P015,P015,research-modifiability-pattern-experiment,completeness,coverage_main_components,Claude,OUT_118,XML,OUT_113,PNG,Tie,Tie,,2026-06-02T20:07:22.122Z
+P015,P015,research-modifiability-pattern-experiment,consistency,notation_uniformity,Claude,OUT_119,XML,OUT_114,PNG,Response B,PNG,,2026-06-02T20:07:50.623Z
+P015,P015,research-modifiability-pattern-experiment,level_of_detail,element_detail,Claude,OUT_115,PNG,OUT_120,XML,Response A,PNG,,2026-06-02T20:08:03.371Z
+P015,P015,research-modifiability-pattern-experiment,clarity,element_identification,Claude,OUT_117,XML,OUT_112,PNG,Response B,PNG,,2026-06-02T20:08:12.339Z
+P015,P015,research-modifiability-pattern-experiment,completeness,external_actors_coverage,Claude,OUT_118,XML,OUT_113,PNG,Tie,Tie,,2026-06-02T20:08:20.790Z
+P015,P015,research-modifiability-pattern-experiment,consistency,technology_symbols,Claude,OUT_114,PNG,OUT_119,XML,Response A,PNG,,2026-06-02T20:08:29.656Z
+P015,P015,research-modifiability-pattern-experiment,level_of_detail,interaction_detail,Claude,OUT_115,PNG,OUT_120,XML,Response A,PNG,,2026-06-02T20:08:43.972Z
+P015,P015,research-modifiability-pattern-experiment,clarity,reading_flow,Claude,OUT_117,XML,OUT_112,PNG,Response B,PNG,,2026-06-02T20:08:53.209Z
+P015,P015,research-modifiability-pattern-experiment,completeness,main_interactions_coverage,Claude,OUT_113,PNG,OUT_118,XML,Response A,PNG,,2026-06-02T20:09:15.187Z
+P015,P015,research-modifiability-pattern-experiment,consistency,naming_consistency,Claude,OUT_119,XML,OUT_114,PNG,Response B,PNG,,2026-06-02T20:09:28.530Z
+P015,P015,research-modifiability-pattern-experiment,level_of_detail,overall_appropriateness,Claude,OUT_115,PNG,OUT_120,XML,Response A,PNG,,2026-06-02T20:09:55.608Z
+P014,P014,appwrite,completeness,coverage_main_components,ChatGPT,OUT_028,SVG,OUT_023,PNG,Response B,PNG,"Response B is more direct regarding the definition of ""Coverage of Main Components"".",2026-06-02T20:10:01.418Z
+P015,P015,research-modifiability-pattern-experiment,clarity,symbol_label_readability,Claude,OUT_112,PNG,OUT_117,XML,Response B,XML,,2026-06-02T20:10:32.008Z
+P015,P015,research-modifiability-pattern-experiment,clarity,specific_symbology,Claude,OUT_112,PNG,OUT_117,XML,Response A,PNG,,2026-06-02T20:10:43.579Z
+P014,P014,appwrite,consistency,notation_uniformity,ChatGPT,OUT_029,SVG,OUT_024,PNG,Response B,PNG,"Response A tries to infer meanings, but being able to connect patterns doesn't mean they hold a clear and consistent notation. Response B makes it clear there is missing information.",2026-06-02T20:17:42.032Z
+P014,P014,appwrite,level_of_detail,element_detail,ChatGPT,OUT_025,PNG,OUT_030,SVG,Tie,Tie,Both answers point the same limitations of the diagram.,2026-06-02T20:20:00.054Z
+P014,P014,appwrite,accuracy,interaction_matching,ChatGPT,OUT_026,SVG,OUT_021,PNG,Tie,Tie,Both answers point out the same limitations of the diagram.,2026-06-02T20:21:28.021Z
+P014,P014,appwrite,clarity,reading_flow,ChatGPT,OUT_027,SVG,OUT_022,PNG,Tie,Tie,Both answers point out the same limitations of the diagram.,2026-06-02T20:22:21.887Z
+P014,P014,appwrite,completeness,external_actors_coverage,ChatGPT,OUT_028,SVG,OUT_023,PNG,Tie,Tie,Both answers point out the same limitations of the diagram.,2026-06-02T20:23:09.202Z
+P014,P014,appwrite,consistency,technology_symbols,ChatGPT,OUT_024,PNG,OUT_029,SVG,Response A,PNG,"Since technology symbols is a very specific topic, the limitations on storage and service notations are relevant enough to bring the score down to 2.",2026-06-02T20:25:57.763Z
+P014,P014,appwrite,level_of_detail,interaction_detail,ChatGPT,OUT_025,PNG,OUT_030,SVG,Tie,Tie,Both answers point out the same limitations of the diagram.,2026-06-02T20:27:17.165Z
+P014,P014,appwrite,accuracy,component_matching,Claude,OUT_036,SVG,OUT_031,PNG,Tie,Tie,,2026-06-02T20:29:34.752Z
+P014,P014,appwrite,clarity,symbol_label_readability,ChatGPT,OUT_022,PNG,OUT_027,SVG,Response A,PNG,Response A is more concise.,2026-06-02T20:31:01.576Z
+P014,P014,appwrite,completeness,main_interactions_coverage,ChatGPT,OUT_023,PNG,OUT_028,SVG,Tie,Tie,,2026-06-02T20:31:26.777Z
+P014,P014,appwrite,consistency,naming_consistency,ChatGPT,OUT_029,SVG,OUT_024,PNG,Tie,Tie,,2026-06-02T20:32:21.493Z
+P014,P014,appwrite,level_of_detail,overall_appropriateness,ChatGPT,OUT_025,PNG,OUT_030,SVG,Tie,Tie,,2026-06-02T20:32:56.075Z
+P014,P014,appwrite,accuracy,interaction_matching,Claude,OUT_031,PNG,OUT_036,SVG,Tie,Tie,,2026-06-02T20:33:02.448Z
+P014,P014,appwrite,clarity,specific_symbology,ChatGPT,OUT_022,PNG,OUT_027,SVG,Tie,Tie,,2026-06-02T20:33:18.212Z
+P014,P014,appwrite,completeness,coverage_main_components,Claude,OUT_033,PNG,OUT_038,SVG,Tie,Tie,,2026-06-02T20:33:27.113Z
+P014,P014,appwrite,consistency,notation_uniformity,Claude,OUT_034,PNG,OUT_039,SVG,Tie,Tie,,2026-06-02T20:33:41.685Z
+P014,P014,appwrite,level_of_detail,element_detail,Claude,OUT_040,SVG,OUT_035,PNG,Tie,Tie,,2026-06-02T20:34:06.931Z
+P014,P014,appwrite,clarity,element_identification,Claude,OUT_032,PNG,OUT_037,SVG,Response A,PNG,,2026-06-02T20:35:12.995Z
+P014,P014,appwrite,completeness,external_actors_coverage,Claude,OUT_033,PNG,OUT_038,SVG,Tie,Tie,,2026-06-02T20:35:29.084Z
+P014,P014,appwrite,consistency,technology_symbols,Claude,OUT_039,SVG,OUT_034,PNG,Response B,PNG,,2026-06-02T20:37:37.032Z
+P014,P014,appwrite,level_of_detail,interaction_detail,Claude,OUT_040,SVG,OUT_035,PNG,Tie,Tie,,2026-06-02T20:37:52.861Z
+P014,P014,appwrite,clarity,reading_flow,Claude,OUT_032,PNG,OUT_037,SVG,Tie,Tie,,2026-06-02T20:38:06.501Z
+P006,P006,spryker,accuracy,component_matching,ChatGPT,OUT_041,PNG,OUT_046,XML,Response B,XML,,2026-06-03T14:28:19.344Z
+P006,P006,spryker,clarity,element_identification,ChatGPT,OUT_047,XML,OUT_042,PNG,Tie,Tie,,2026-06-03T14:28:34.320Z
+P006,P006,spryker,completeness,coverage_main_components,ChatGPT,OUT_048,XML,OUT_043,PNG,Tie,Tie,,2026-06-03T14:28:58.032Z
+P006,P006,spryker,consistency,notation_uniformity,ChatGPT,OUT_049,XML,OUT_044,PNG,Tie,Tie,Empata porém existem informações complementares.,2026-06-03T14:30:32.242Z
+P006,P006,spryker,level_of_detail,element_detail,ChatGPT,OUT_045,PNG,OUT_050,XML,Response A,PNG,Achei a resposta A mais objetiva.,2026-06-03T14:31:30.764Z
+P006,P006,spryker,accuracy,interaction_matching,ChatGPT,OUT_046,XML,OUT_041,PNG,Response B,PNG,"Resposta B é mais direta ao ponto, veja que a resposta A começa com uma contextualização.",2026-06-03T14:33:17.253Z
+P006,P006,spryker,clarity,reading_flow,ChatGPT,OUT_047,XML,OUT_042,PNG,Response B,PNG,"A resposta A avalia como bom, porém a propria justificativa é uma inferência com explicação confusa.",2026-06-03T14:35:53.409Z
+P006,P006,spryker,completeness,external_actors_coverage,ChatGPT,OUT_048,XML,OUT_043,PNG,Response A,XML,"A resposta B deveria ter dado nota 1, visto que não há explecitamente atores externos.",2026-06-03T14:38:05.788Z
+P006,P006,spryker,consistency,technology_symbols,ChatGPT,OUT_044,PNG,OUT_049,XML,Tie,Tie,,2026-06-03T14:38:42.022Z
+P006,P006,spryker,level_of_detail,interaction_detail,ChatGPT,OUT_045,PNG,OUT_050,XML,Tie,Tie,,2026-06-03T14:38:58.350Z
+P004,P004,appwrite,accuracy,component_matching,ChatGPT,OUT_021,PNG,OUT_026,SVG,Response B,SVG,"Response A is more concise and direct, which is good. Response B was more detailed showing, for example, the unusual order of the load balancer.",2026-06-05T17:56:30.033Z
+P012,P012,magda-io,accuracy,component_matching,ChatGPT,OUT_086,SVG,OUT_081,PNG,Response B,PNG,Response B is more detailed and critical,2026-06-08T20:08:15.421Z
+P012,P012,magda-io,clarity,element_identification,ChatGPT,OUT_082,PNG,OUT_087,SVG,Tie,Tie,,2026-06-08T20:10:17.197Z
+P012,P012,magda-io,completeness,coverage_main_components,ChatGPT,OUT_083,PNG,OUT_088,SVG,Response A,PNG,,2026-06-08T20:12:08.608Z
+P012,P012,magda-io,consistency,notation_uniformity,ChatGPT,OUT_084,PNG,OUT_089,SVG,Response B,SVG,Response B pointed about the different arrow style,2026-06-08T20:14:02.340Z
+P012,P012,magda-io,level_of_detail,element_detail,ChatGPT,OUT_090,SVG,OUT_085,PNG,Response B,PNG,,2026-06-09T01:47:12.572Z
+P012,P012,magda-io,accuracy,interaction_matching,ChatGPT,OUT_081,PNG,OUT_086,SVG,Response B,SVG,,2026-06-09T01:47:52.409Z
+P012,P012,magda-io,clarity,reading_flow,ChatGPT,OUT_082,PNG,OUT_087,SVG,Response B,SVG,,2026-06-09T01:48:31.982Z
+P012,P012,magda-io,completeness,external_actors_coverage,ChatGPT,OUT_083,PNG,OUT_088,SVG,Response B,SVG,,2026-06-09T01:48:56.044Z
+P012,P012,magda-io,consistency,technology_symbols,ChatGPT,OUT_089,SVG,OUT_084,PNG,Response B,PNG,,2026-06-09T01:49:13.073Z
+P012,P012,magda-io,level_of_detail,interaction_detail,ChatGPT,OUT_090,SVG,OUT_085,PNG,Response A,SVG,,2026-06-09T01:49:30.962Z
+P012,P012,magda-io,accuracy,component_matching,Claude,OUT_091,PNG,OUT_096,SVG,Response A,PNG,,2026-06-09T01:51:00.313Z
+P012,P012,magda-io,clarity,symbol_label_readability,ChatGPT,OUT_087,SVG,OUT_082,PNG,Response B,PNG,,2026-06-09T01:51:39.190Z
+P012,P012,magda-io,completeness,main_interactions_coverage,ChatGPT,OUT_088,SVG,OUT_083,PNG,Response B,PNG,,2026-06-09T01:55:25.963Z
+P012,P012,magda-io,consistency,naming_consistency,ChatGPT,OUT_084,PNG,OUT_089,SVG,Response A,PNG,more concise,2026-06-09T01:56:05.365Z
+P012,P012,magda-io,level_of_detail,overall_appropriateness,ChatGPT,OUT_090,SVG,OUT_085,PNG,Response B,PNG,,2026-06-09T01:56:39.646Z
+P012,P012,magda-io,accuracy,interaction_matching,Claude,OUT_096,SVG,OUT_091,PNG,Response A,SVG,,2026-06-09T01:57:33.512Z
+P012,P012,magda-io,clarity,specific_symbology,ChatGPT,OUT_087,SVG,OUT_082,PNG,Response A,SVG,,2026-06-09T01:59:28.174Z
+P012,P012,magda-io,completeness,coverage_main_components,Claude,OUT_098,SVG,OUT_093,PNG,Response B,PNG,,2026-06-09T02:00:39.761Z
+P012,P012,magda-io,consistency,notation_uniformity,Claude,OUT_099,SVG,OUT_094,PNG,Response B,PNG,,2026-06-09T02:02:46.714Z
+P012,P012,magda-io,level_of_detail,element_detail,Claude,OUT_095,PNG,OUT_100,SVG,Response A,PNG,,2026-06-09T02:03:31.667Z
+P012,P012,magda-io,clarity,element_identification,Claude,OUT_097,SVG,OUT_092,PNG,Response B,PNG,,2026-06-09T02:05:06.898Z
+P012,P012,magda-io,completeness,external_actors_coverage,Claude,OUT_098,SVG,OUT_093,PNG,Response A,SVG,,2026-06-09T02:05:38.530Z
+P012,P012,magda-io,consistency,technology_symbols,Claude,OUT_094,PNG,OUT_099,SVG,Response A,PNG,,2026-06-09T02:06:00.876Z
+P012,P012,magda-io,level_of_detail,interaction_detail,Claude,OUT_095,PNG,OUT_100,SVG,Response A,PNG,,2026-06-09T02:06:53.894Z
+P012,P012,magda-io,clarity,reading_flow,Claude,OUT_097,SVG,OUT_092,PNG,Response B,PNG,,2026-06-09T02:08:59.677Z
+P012,P012,magda-io,completeness,main_interactions_coverage,Claude,OUT_093,PNG,OUT_098,SVG,Response B,SVG,,2026-06-09T02:11:08.087Z
+P012,P012,magda-io,consistency,naming_consistency,Claude,OUT_099,SVG,OUT_094,PNG,Response B,PNG,,2026-06-09T02:11:49.883Z
+P012,P012,magda-io,level_of_detail,overall_appropriateness,Claude,OUT_095,PNG,OUT_100,SVG,Response A,PNG,,2026-06-09T02:14:03.569Z
+P012,P012,magda-io,clarity,symbol_label_readability,Claude,OUT_092,PNG,OUT_097,SVG,Response A,PNG,,2026-06-09T02:14:45.133Z
+P012,P012,magda-io,clarity,specific_symbology,Claude,OUT_092,PNG,OUT_097,SVG,Response B,SVG,,2026-06-09T02:16:10.148Z
+P008,P008,sentry,accuracy,component_matching,ChatGPT,OUT_066,XML,OUT_061,PNG,Response A,XML,Response B makes assumptions about memchaded as the store for config/event ingestion caching which is made up,2026-06-09T02:30:51.657Z
+P008,P008,sentry,clarity,element_identification,ChatGPT,OUT_062,PNG,OUT_067,XML,Response A,PNG,more straight forward,2026-06-09T02:31:52.824Z
+P008,P008,sentry,completeness,coverage_main_components,ChatGPT,OUT_063,PNG,OUT_068,XML,Tie,Tie,,2026-06-09T02:32:20.686Z
+P008,P008,sentry,consistency,notation_uniformity,ChatGPT,OUT_064,PNG,OUT_069,XML,Response A,PNG,,2026-06-09T02:34:21.010Z
+P008,P008,sentry,level_of_detail,element_detail,ChatGPT,OUT_070,XML,OUT_065,PNG,Response B,PNG,,2026-06-09T03:36:07.294Z
+P008,P008,sentry,accuracy,interaction_matching,ChatGPT,OUT_061,PNG,OUT_066,XML,Response B,XML,Response A makes information up when saying that relay reads from read from memcached,2026-06-09T03:37:54.567Z
+P008,P008,sentry,clarity,reading_flow,ChatGPT,OUT_062,PNG,OUT_067,XML,Response B,XML,,2026-06-09T03:39:48.842Z
+P008,P008,sentry,completeness,external_actors_coverage,ChatGPT,OUT_063,PNG,OUT_068,XML,Tie,Tie,,2026-06-09T03:40:16.021Z
+P008,P008,sentry,consistency,technology_symbols,ChatGPT,OUT_069,XML,OUT_064,PNG,Response A,XML,,2026-06-09T03:42:26.755Z
+P008,P008,sentry,level_of_detail,interaction_detail,ChatGPT,OUT_070,XML,OUT_065,PNG,Response A,XML,,2026-06-09T04:01:29.310Z
+P008,P008,sentry,accuracy,component_matching,Claude,OUT_071,PNG,OUT_076,XML,Response A,PNG,Response A is more nuanced,2026-06-09T04:03:13.924Z
+P008,P008,sentry,clarity,symbol_label_readability,ChatGPT,OUT_067,XML,OUT_062,PNG,Response B,PNG,,2026-06-09T04:04:09.175Z
+P008,P008,sentry,completeness,main_interactions_coverage,ChatGPT,OUT_068,XML,OUT_063,PNG,Response B,PNG,Response A seems to have guessed or know more than the diagram and description say,2026-06-09T04:08:17.730Z
+P008,P008,sentry,consistency,naming_consistency,ChatGPT,OUT_064,PNG,OUT_069,XML,Response B,XML,,2026-06-09T04:10:51.313Z
+P002,P002,geoserver-cloud,accuracy,component_matching,ChatGPT,OUT_001,PNG,OUT_006,SVG,Response B,SVG,,2026-06-09T14:29:09.194Z
+P008,P008,sentry,level_of_detail,overall_appropriateness,ChatGPT,OUT_070,XML,OUT_065,PNG,Response B,PNG,more consistent score,2026-06-09T21:50:21.607Z
+P008,P008,sentry,accuracy,interaction_matching,Claude,OUT_076,XML,OUT_071,PNG,Response A,XML,,2026-06-09T21:53:11.993Z
+P008,P008,sentry,clarity,specific_symbology,ChatGPT,OUT_067,XML,OUT_062,PNG,Response B,PNG,,2026-06-09T21:53:59.176Z
+P008,P008,sentry,completeness,coverage_main_components,Claude,OUT_078,XML,OUT_073,PNG,Response B,PNG,,2026-06-09T21:54:55.486Z
+P008,P008,sentry,consistency,notation_uniformity,Claude,OUT_079,XML,OUT_074,PNG,Response A,XML,,2026-06-09T21:56:25.396Z
+P008,P008,sentry,level_of_detail,element_detail,Claude,OUT_075,PNG,OUT_080,XML,Tie,Tie,,2026-06-09T21:59:34.178Z
+P008,P008,sentry,clarity,element_identification,Claude,OUT_077,XML,OUT_072,PNG,Response A,XML,,2026-06-09T22:02:12.410Z
+P008,P008,sentry,completeness,external_actors_coverage,Claude,OUT_078,XML,OUT_073,PNG,Response B,PNG,,2026-06-09T22:02:58.979Z
+P008,P008,sentry,consistency,technology_symbols,Claude,OUT_074,PNG,OUT_079,XML,Response B,XML,"Kafka is NOT rendered as a parallelogram/skewed box, very wrong",2026-06-09T22:04:37.015Z
+P008,P008,sentry,level_of_detail,interaction_detail,Claude,OUT_075,PNG,OUT_080,XML,Response A,PNG,,2026-06-09T22:07:13.218Z
+P008,P008,sentry,clarity,reading_flow,Claude,OUT_077,XML,OUT_072,PNG,Tie,Tie,,2026-06-09T22:10:38.979Z
+P008,P008,sentry,completeness,main_interactions_coverage,Claude,OUT_073,PNG,OUT_078,XML,Response A,PNG,,2026-06-09T22:15:50.287Z
+P008,P008,sentry,consistency,naming_consistency,Claude,OUT_079,XML,OUT_074,PNG,Response B,PNG,,2026-06-09T22:17:45.516Z
+P008,P008,sentry,level_of_detail,overall_appropriateness,Claude,OUT_075,PNG,OUT_080,XML,Tie,Tie,,2026-06-09T22:19:15.913Z
+P008,P008,sentry,clarity,symbol_label_readability,Claude,OUT_072,PNG,OUT_077,XML,Response A,PNG,,2026-06-09T22:19:51.759Z
+P008,P008,sentry,clarity,specific_symbology,Claude,OUT_072,PNG,OUT_077,XML,Tie,Tie,,2026-06-09T22:20:38.887Z
+P002,P002,geoserver-cloud,clarity,element_identification,ChatGPT,OUT_007,SVG,OUT_002,PNG,Response B,PNG,,2026-06-11T13:46:59.034Z
+P002,P002,geoserver-cloud,completeness,coverage_main_components,ChatGPT,OUT_008,SVG,OUT_003,PNG,Response B,PNG,,2026-06-11T13:48:15.599Z
+P002,P002,geoserver-cloud,consistency,notation_uniformity,ChatGPT,OUT_009,SVG,OUT_004,PNG,Response B,PNG,,2026-06-11T13:49:33.092Z
+P002,P002,geoserver-cloud,level_of_detail,element_detail,ChatGPT,OUT_005,PNG,OUT_010,SVG,Response B,SVG,,2026-06-11T13:50:21.459Z
+P002,P002,geoserver-cloud,accuracy,interaction_matching,ChatGPT,OUT_006,SVG,OUT_001,PNG,Response B,PNG,,2026-06-11T13:51:41.377Z
+P002,P002,geoserver-cloud,clarity,reading_flow,ChatGPT,OUT_007,SVG,OUT_002,PNG,Response B,PNG,,2026-06-11T13:52:31.251Z
+P002,P002,geoserver-cloud,completeness,external_actors_coverage,ChatGPT,OUT_008,SVG,OUT_003,PNG,Response B,PNG,,2026-06-11T13:53:28.042Z
+P002,P002,geoserver-cloud,consistency,technology_symbols,ChatGPT,OUT_004,PNG,OUT_009,SVG,Response A,PNG,,2026-06-11T13:54:31.036Z
+P002,P002,geoserver-cloud,level_of_detail,interaction_detail,ChatGPT,OUT_005,PNG,OUT_010,SVG,Response B,SVG,,2026-06-11T13:55:22.068Z
+P002,P002,geoserver-cloud,accuracy,component_matching,Claude,OUT_016,SVG,OUT_011,PNG,Response B,PNG,,2026-06-11T13:57:03.197Z
+P002,P002,geoserver-cloud,clarity,symbol_label_readability,ChatGPT,OUT_002,PNG,OUT_007,SVG,Response A,PNG,,2026-06-11T13:57:36.573Z
+P002,P002,geoserver-cloud,completeness,main_interactions_coverage,ChatGPT,OUT_003,PNG,OUT_008,SVG,Response A,PNG,,2026-06-11T13:58:48.304Z
+P002,P002,geoserver-cloud,consistency,naming_consistency,ChatGPT,OUT_009,SVG,OUT_004,PNG,Response B,PNG,,2026-06-11T14:06:39.943Z
+P002,P002,geoserver-cloud,level_of_detail,overall_appropriateness,ChatGPT,OUT_005,PNG,OUT_010,SVG,Response B,SVG,,2026-06-11T14:07:45.299Z
+P002,P002,geoserver-cloud,accuracy,interaction_matching,Claude,OUT_011,PNG,OUT_016,SVG,Response A,PNG,,2026-06-11T14:08:43.673Z
+P002,P002,geoserver-cloud,clarity,specific_symbology,ChatGPT,OUT_002,PNG,OUT_007,SVG,Response A,PNG,,2026-06-11T14:09:51.821Z
+P002,P002,geoserver-cloud,completeness,coverage_main_components,Claude,OUT_013,PNG,OUT_018,SVG,Response A,PNG,,2026-06-11T14:10:24.087Z
+P013,P013,geoserver-cloud,level_of_detail,element_detail,ChatGPT,OUT_005,PNG,OUT_010,SVG,Response B,SVG,"Overall score is lower, which i really agree to.",2026-06-11T16:32:08.230Z
+P013,P013,geoserver-cloud,accuracy,interaction_matching,ChatGPT,OUT_006,SVG,OUT_001,PNG,Response B,PNG,Poorly presented actions in the diagram.,2026-06-11T16:32:40.600Z
+P013,P013,geoserver-cloud,clarity,reading_flow,ChatGPT,OUT_007,SVG,OUT_002,PNG,Response A,SVG,Definitely there is no clear start and flow is not sequenced. Initially it looks really confusing.,2026-06-11T16:33:09.187Z
+P013,P013,geoserver-cloud,completeness,external_actors_coverage,ChatGPT,OUT_008,SVG,OUT_003,PNG,Response B,PNG,"Literally no external actors are shown. They are implicit, which makes it more confusing to read through the flow.",2026-06-11T16:33:45.774Z
+P013,P013,geoserver-cloud,consistency,technology_symbols,ChatGPT,OUT_004,PNG,OUT_009,SVG,Response B,SVG,Iconography is weird. There are design differences between same category entities.,2026-06-11T16:34:34.795Z
+P013,P013,geoserver-cloud,level_of_detail,interaction_detail,ChatGPT,OUT_005,PNG,OUT_010,SVG,Response B,SVG,Direct interaction is lacking information. All arrows in the diagram are the exact same and the reader is required to know or assume the type of action.,2026-06-11T16:35:15.479Z
+P013,P013,geoserver-cloud,accuracy,component_matching,Claude,OUT_016,SVG,OUT_011,PNG,Tie,Tie,"The text explains quite a bit of the diagram, although I still think there is information lacking on the diagram itself.",2026-06-11T16:35:53.513Z
+P013,P013,geoserver-cloud,clarity,symbol_label_readability,ChatGPT,OUT_002,PNG,OUT_007,SVG,Response B,SVG,"There is multiple inconsistencies on the diagram design, regarding groups, labels and symbols.",2026-06-11T16:36:42.297Z
+P013,P013,geoserver-cloud,completeness,main_interactions_coverage,ChatGPT,OUT_003,PNG,OUT_008,SVG,Tie,Tie,,2026-06-11T16:37:29.489Z
+P013,P013,geoserver-cloud,consistency,naming_consistency,ChatGPT,OUT_009,SVG,OUT_004,PNG,Response A,SVG,"I chose this option because the other one cited mixed capitalization and hyphenation mismatch. Although there is hyphenation mismatch and mixed capitalization between the description and the diagram, that does not deteriorate the comprehension.",2026-06-11T16:39:28.467Z

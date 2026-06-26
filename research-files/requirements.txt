@@ -3,6 +3,9 @@
 # OpenAI API client for ChatGPT integration
 openai>=1.0.0
 
+# Anthropic API client for Claude integration
+anthropic>=0.104.0
+
 # Google Generative AI client for Gemini integration
 # NOTE: google-generativeai is deprecated. The new package is google-genai
 # The old package still works but consider migrating to google-genai in the future
