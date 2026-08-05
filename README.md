@@ -37,6 +37,8 @@ All expert-facing data from the study are exported as CSV. Participants are iden
 | **Ground-truth scoring** | [`llm-assesment-v2 - gt_scores.csv`](research-files/analysis-csv/llm-assesment-v2%20-%20gt_scores.csv) | 216 | One score: expert rates a `(Diagram, Criterion, Guideline)` on scale **1–4** |
 | **Pairwise preference (Phase 3)** | [`llm-assesment-v2 - pairwise_preferences.csv`](research-files/analysis-csv/llm-assesment-v2%20-%20pairwise_preferences.csv) | 253 | One comparison: expert picks better LLM reasoning (image / text / tie) |
 
+> **Why 216 ground-truth rows (not 240)?** Of the 16 participants who completed the demographics phase, 15 submitted ground-truth scores (P010 submitted none). Each responding expert scored one assigned diagram across the 15 guidelines. Fourteen experts completed all 15 guidelines (14 × 15 = 210 rows), and one expert (P001, on `sentry`) submitted 6 of the 15 guidelines (6 rows). This yields 210 + 6 = **216** rows. Equivalently: 240 − 15 (P010 absent) − 9 (P001 partial: 15 − 6) = 216.
+
 ### Key columns
 
 **Demographics**
@@ -55,7 +57,7 @@ All expert-facing data from the study are exported as CSV. Participants are iden
 **Pairwise preferences (`pairwise_preferences.csv`)**
 
 - `Diagram_ID`, `Criterion`, `Guideline` — comparison context  
-- `Internal_Source_Group` — `ChatGPT` or `Claude` (source model of the pair)  
+- `Internal_Source_Group` — source model of the pair: `ChatGPT` (= GPT-5) or `Claude` (= Claude Sonnet 4.6); see [Model labels](#model-labels)  
 - `Response_A_Format`, `Response_B_Format` — `PNG`, `SVG`, or `XML`  
 - `Preferred_Format` — `PNG` (image), `SVG`/`XML` (text), or `Tie`  
 - `Comparison_Justification` — optional free text  
@@ -134,7 +136,7 @@ Six open-source architecture diagrams were used. Each case study lives in its ow
 
 ### LLM experimental design (per diagram)
 
-- **Models:** ChatGPT, Claude  
+- **Models:** GPT-5 and Claude Sonnet 4.6 (labeled `chatgpt`/`ChatGPT` and `claude`/`Claude` respectively throughout the raw outputs and CSVs — see [Model labels](#model-labels))  
 - **Representations:** PNG (image) vs SVG/XML (text)  
 - **Criteria:** 5 rubrics × multiple guidelines each  
 - **Runs:** one JSON (+ text log) per `(model, format, criterion)` — see [`llm-evaluations/trials_selected.csv`](research-files/analysis-csv/llm-evaluations/trials_selected.csv) for the exact file manifest  
@@ -155,16 +157,35 @@ One markdown template per criterion. Placeholders `[Insert diagram here]` and `[
 
 ---
 
+## Model labels
+
+The two models reported in the paper are **GPT-5** and **Claude Sonnet 4.6**. For historical reasons, the raw evaluation outputs, folder names (`chatgpt_*/`, `claude_*/`), CSV values (`ChatGPT`/`Claude`), and runner scripts use generic provider labels. These are kept unchanged so that existing file paths and analysis notebooks remain reproducible. The mapping is:
+
+| Label in artifact (folders, CSVs, scripts) | Model reported in the paper | Provider / API |
+|---|---|---|
+| `chatgpt` / `ChatGPT` | GPT-5 | OpenAI |
+| `claude` / `Claude` | Claude Sonnet 4.6 | Anthropic |
+
+---
+
 ## LLM clients
 
-- [`research-files/chatgpt_integration/client.py`](research-files/chatgpt_integration/client.py) — OpenAI  
-- [`research-files/claude_integration/`](research-files/claude_integration/) — Anthropic  
+- [`research-files/chatgpt_integration/client.py`](research-files/chatgpt_integration/client.py) — OpenAI (GPT-5)  
+- [`research-files/claude_integration/`](research-files/claude_integration/) — Anthropic (Claude Sonnet 4.6)  
 
 Batch runners: [`run_all_chatgpt.py`](research-files/run_all_chatgpt.py), [`run_all_claude.py`](research-files/run_all_claude.py).
 
 ---
 
 ## Reproducing the analysis
+
+Install the dependencies (Python 3.10+ recommended):
+
+```bash
+pip install -r research-files/requirements.txt
+```
+
+Then run the notebooks in order:
 
 ```texts
 1. ground-truth/build_ground_truth.ipynb   → ground_truth_*.csv
