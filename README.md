@@ -2,6 +2,12 @@
 
 This repository supports replication and review of a study on **LLM-based evaluation of software architecture diagrams** under different input representations (image vs text).
 
+**Paper:** *How Reliable Are LLM Evaluations of Microservice Architecture Diagrams?*
+
+**Authors:** João Luiz Cerqueira, Mateus Dutra, Eduardo Figueiredo, and Gustavo Andrade Vale (Federal University of Minas Gerais — UFMG, Belo Horizonte, Brazil)
+
+**Venue:** SBCARS 2026 — 20th Brazilian Symposium on Software Components, Architectures, and Reuse (September 8–11, 2026, São Paulo, SP, Brazil)
+
 **Anonymous audit site** (survey flow, prompts shown to experts):
 
 - https://anonymous.4open.science/w/llm-assessment-audit-1238
