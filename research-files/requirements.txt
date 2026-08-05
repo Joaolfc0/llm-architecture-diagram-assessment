@@ -1,17 +1,31 @@
 # LLM Architecture Evaluation Dependencies
+#
+# Install everything with:
+#   pip install -r requirements.txt
 
-# OpenAI API client for ChatGPT integration
+# --- LLM API clients (used by the run_evaluation / run_all scripts) ---
+
+# OpenAI API client (GPT-5, labeled "chatgpt" in the evaluation outputs)
 openai>=1.0.0
 
-# Anthropic API client for Claude integration
+# Anthropic API client (Claude Sonnet 4.6, labeled "claude" in the evaluation outputs)
 anthropic>=0.104.0
 
-# Google Generative AI client for Gemini integration
-# NOTE: google-generativeai is deprecated. The new package is google-genai
-# The old package still works but consider migrating to google-genai in the future
+# Google Generative AI client (used only by the optional gemini_integration module;
+# not part of the reported study, which evaluated GPT-5 and Claude Sonnet 4.6).
+# NOTE: google-generativeai is deprecated in favor of google-genai.
 google-generativeai>=0.3.0
-# Alternative (new package): google-genai>=1.0.0
 
-# Environment variable management
+# Environment variable management (.env API keys)
 python-dotenv>=1.0.0
 
+# --- Analysis stack (used by the RQ notebooks and analysis_utils.py) ---
+numpy
+pandas
+matplotlib
+scipy
+scikit-learn
+
+# Notebook runtime for the build_*/rq*_*.ipynb notebooks
+jupyter
+ipykernel

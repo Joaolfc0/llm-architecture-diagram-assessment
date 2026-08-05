@@ -52,3 +52,4 @@ aea/
 # Private participant data (do not publish)
 research-files/analysis-csv/_private_originals/
 research-files/analysis-csv/participant_id_map_PRIVATE.csv
+article/
